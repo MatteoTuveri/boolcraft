@@ -12,3 +12,21 @@ $fa-font-path: "../fonts/webfonts" !default;
 h1 {
     color: $text-color;
 }
+.my-item-card {
+    width: 200px;
+    .my-item-box {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    h5 {
+        color: black;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
