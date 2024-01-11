@@ -1,335 +1,372 @@
 [
-  {
-    "name": "Club",
-    "slug": "club",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "1 sp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Dagger",
-    "slug": "dagger",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "1 lb.",
-    "cost": "2 gp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Greatclub",
-    "slug": "greatclub",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "10 lb.",
-    "cost": "2 sp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Handaxe",
-    "slug": "handaxe",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "5 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Javelin",
-    "slug": "javelin",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "5 sp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Light hammer",
-    "slug": "light-hammer",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "2 gp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Mace",
-    "slug": "mace",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "4 lb.",
-    "cost": "5 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Quarterstaff",
-    "slug": "quarterstaff",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "4 lb.",
-    "cost": "2 sp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Sickle",
-    "slug": "sickle",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "1 gp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Spear",
-    "slug": "spear",
-    "type": "Weapons",
-    "category": "Simple Melee Weapons",
-    "weight": "3 lb.",
-    "cost": "1 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Crossbow, light",
-    "slug": "crossbow-light",
-    "type": "Weapons",
-    "category": "Simple Ranged Weapons",
-    "weight": "5 lb.",
-    "cost": "25 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Dart",
-    "slug": "dart",
-    "type": "Weapons",
-    "category": "Simple Ranged Weapons",
-    "weight": "1/4 lb.",
-    "cost": "5 cp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Shortbow",
-    "slug": "shortbow",
-    "type": "Weapons",
-    "category": "Simple Ranged Weapons",
-    "weight": "2 lb.",
-    "cost": "25 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Sling",
-    "slug": "sling",
-    "type": "Weapons",
-    "category": "Simple Ranged Weapons",
-    "weight": "0 lb.",
-    "cost": "1 sp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Battleaxe",
-    "slug": "battleaxe",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "4 lb.",
-    "cost": "10 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Flail",
-    "slug": "flail",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "10 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Glaive",
-    "slug": "glaive",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "6 lb.",
-    "cost": "20 gp",
-    "damage_dice": "1d10"
-  },
-  {
-    "name": "Greataxe",
-    "slug": "greataxe",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "7 lb.",
-    "cost": "30 gp",
-    "damage_dice": "1d12"
-  },
-  {
-    "name": "Greatsword",
-    "slug": "greatsword",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "6 lb.",
-    "cost": "50 gp",
-    "damage_dice": "2d6"
-  },
-  {
-    "name": "Halberd",
-    "slug": "halberd",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "6 lb.",
-    "cost": "20 gp",
-    "damage_dice": "1d10"
-  },
-  {
-    "name": "Lance",
-    "slug": "lance",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "6 lb.",
-    "cost": "10 gp",
-    "damage_dice": "1d12"
-  },
-  {
-    "name": "Longsword",
-    "slug": "longsword",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "3 lb.",
-    "cost": "15 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Maul",
-    "slug": "maul",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "10 lb.",
-    "cost": "10 gp",
-    "damage_dice": "2d6"
-  },
-  {
-    "name": "Morningstar",
-    "slug": "morningstar",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "4 lb.",
-    "cost": "15 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Pike",
-    "slug": "pike",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "18 lb.",
-    "cost": "5 gp",
-    "damage_dice": "1d10"
-  },
-  {
-    "name": "Rapier",
-    "slug": "rapier",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "25 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Scimitar",
-    "slug": "scimitar",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "3 lb.",
-    "cost": "25 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Shortsword",
-    "slug": "shortsword",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "10 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Trident",
-    "slug": "trident",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "4 lb.",
-    "cost": "5 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "War pick",
-    "slug": "war-pick",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "5 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Warhammer",
-    "slug": "warhammer",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "2 lb.",
-    "cost": "15 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Whip",
-    "slug": "whip",
-    "type": "Weapons",
-    "category": "Martial Melee Weapons",
-    "weight": "3 lb.",
-    "cost": "2 gp",
-    "damage_dice": "1d4"
-  },
-  {
-    "name": "Blowgun",
-    "slug": "blowgun",
-    "type": "Weapons",
-    "category": "Martial Ranged Weapons",
-    "weight": "1 lb.",
-    "cost": "10 gp",
-    "damage_dice": "1"
-  },
-  {
-    "name": "Crossbow, hand",
-    "slug": "crossbow-hand",
-    "type": "Weapons",
-    "category": "Martial Ranged Weapons",
-    "weight": "3 lb.",
-    "cost": "75 gp",
-    "damage_dice": "1d6"
-  },
-  {
-    "name": "Crossbow, heavy",
-    "slug": "crossbow-heavy",
-    "type": "Weapons",
-    "category": "Martial Ranged Weapons",
-    "weight": "18 lb.",
-    "cost": "50 gp",
-    "damage_dice": "1d10"
-  },
-  {
-    "name": "Longbow",
-    "slug": "longbow",
-    "type": "Weapons",
-    "category": "Martial Ranged Weapons",
-    "weight": "2 lb.",
-    "cost": "50 gp",
-    "damage_dice": "1d8"
-  },
-  {
-    "name": "Net",
-    "slug": "net",
-    "type": "Weapons",
-    "category": "Martial Ranged Weapons",
-    "weight": "3 lb.",
-    "cost": "1 gp",
-    "damage_dice": "0"
-  }
-]
+    {
+        "name": "Club",
+        "description": "A simple wooden club, commonly used by tribes and primitive cultures.",
+        "slug": "club",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "1 sp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Dagger",
+        "description": "A small and versatile dagger, suitable for quick and precise strikes.",
+        "slug": "dagger",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "1 lb.",
+        "cost": "2 gp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Greatclub",
+        "description": "A large and crude wooden greatclub, wielded by brutes and barbarians.",
+        "slug": "greatclub",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "10 lb.",
+        "cost": "2 sp",
+        "damage_dice": "1d8"
+    },
+    {
+        "name": "Handaxe",
+        "description": "A small handaxe, commonly used for both utility and combat.",
+        "slug": "handaxe",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "5 gp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Javelin",
+        "description": "A thrown javelin, favored by warriors who need both ranged and melee options.",
+        "slug": "javelin",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "5 sp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Light hammer",
+        "description": "A compact light hammer, suitable for both combat and basic construction work.",
+        "slug": "light-hammer",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "2 gp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Mace",
+        "description": "A sturdy mace, often used by clerics and those who prefer blunt force.",
+        "slug": "mace",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "4 lb.",
+        "cost": "5 gp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Quarterstaff",
+        "description": "A simple quarterstaff, a favorite among monks and those who prefer versatile weapons.",
+        "slug": "quarterstaff",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "4 lb.",
+        "cost": "2 sp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Sickle",
+        "description": "A curved sickle, suitable for both farming and close-quarters combat.",
+        "slug": "sickle",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "1 gp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Spear",
+        "description": "A versatile spear, effective for both thrusting and throwing.",
+        "slug": "spear",
+        "type": "Weapons",
+        "category": "Simple Melee Weapons",
+        "weight": "3 lb.",
+        "cost": "1 gp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Crossbow, light",
+        "description": "A compact and easy-to-use light crossbow, perfect for ranged attacks.",
+        "slug": "crossbow-light",
+        "type": "Weapons",
+        "category": "Simple Ranged Weapons",
+        "weight": "5 lb.",
+        "cost": "25 gp",
+        "damage_dice": "1d8"
+    },
+    {
+        "name": "Dart",
+        "description": "A small and throwable dart, favored by entertainers and agile combatants.",
+        "slug": "dart",
+        "type": "Weapons",
+        "category": "Simple Ranged Weapons",
+        "weight": "1/4 lb.",
+        "cost": "5 cp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Shortbow",
+        "description": "A compact shortbow, suitable for archers who need mobility and versatility.",
+        "slug": "shortbow",
+        "type": "Weapons",
+        "category": "Simple Ranged Weapons",
+        "weight": "2 lb.",
+        "cost": "25 gp",
+        "damage_dice": "1d6"
+    },
+    {
+        "name": "Sling",
+        "description": "A simple sling, often used by those who prefer a low-cost ranged option.",
+        "slug": "sling",
+        "type": "Weapons",
+        "category": "Simple Ranged Weapons",
+        "weight": "0 lb.",
+        "cost": "1 sp",
+        "damage_dice": "1d4"
+    },
+    {
+        "name": "Battleaxe",
+        "description": "A versatile battleaxe, favored by warriors for its balance of power and speed.",
+        "slug": "battleaxe",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "4 lb.",
+        "cost": "10 gp",
+        "damage_dice": "1d8"
+    },
+    {
+        "name": "Flail",
+        "description": "A deadly flail with a spiked chain, capable of delivering powerful and unpredictable strikes.",
+        "slug": "flail",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "10 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Glaive",
+        "description": "A long-bladed glaive, ideal for reaching distant foes with its sweeping attacks.",
+        "slug": "glaive",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "6 lb.",
+        "cost": "20 gp",
+        "damage_dice": "1d10"
+      },
+      {
+        "name": "Greataxe",
+        "description": "A massive greataxe, favored by those who seek raw power and devastating cleaving blows.",
+        "slug": "greataxe",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "7 lb.",
+        "cost": "30 gp",
+        "damage_dice": "1d12"
+      },
+      {
+        "name": "Greatsword",
+        "description": "A two-handed greatsword, known for its sheer cutting force and ability to cleave through armor.",
+        "slug": "greatsword",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "6 lb.",
+        "cost": "50 gp",
+        "damage_dice": "2d6"
+      },
+      {
+        "name": "Halberd",
+        "description": "A versatile halberd, featuring both an axe blade and a spear point for various combat situations.",
+        "slug": "halberd",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "6 lb.",
+        "cost": "20 gp",
+        "damage_dice": "1d10"
+      },
+      {
+        "name": "Lance",
+        "description": "A long and pointed lance, designed for mounted combat and powerful charging attacks.",
+        "slug": "lance",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "6 lb.",
+        "cost": "10 gp",
+        "damage_dice": "1d12"
+      },
+      {
+        "name": "Longsword",
+        "description": "A classic longsword, well-balanced and suitable for a variety of combat styles.",
+        "slug": "longsword",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "3 lb.",
+        "cost": "15 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Maul",
+        "description": "A heavy maul, capable of crushing through armor and delivering devastating blows.",
+        "slug": "maul",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "10 lb.",
+        "cost": "10 gp",
+        "damage_dice": "2d6"
+      },
+      {
+        "name": "Morningstar",
+        "description": "A spiked morningstar, offering a mix of piercing and blunt damage in combat.",
+        "slug": "morningstar",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "4 lb.",
+        "cost": "15 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Pike",
+        "description": "A long pike, perfect for holding off enemies at a distance with its extended reach.",
+        "slug": "pike",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "18 lb.",
+        "cost": "5 gp",
+        "damage_dice": "1d10"
+      },
+      {
+        "name": "Rapier",
+        "description": "A slender and agile rapier, favored by duelists for its precision in combat.",
+        "slug": "rapier",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "25 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Scimitar",
+        "description": "A curved scimitar, known for its slashing attacks and agility in close-quarters combat.",
+        "slug": "scimitar",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "3 lb.",
+        "cost": "25 gp",
+        "damage_dice": "1d6"
+      },
+      {
+        "name": "Shortsword",
+        "description": "A versatile shortsword, suitable for quick strikes and agile combat styles.",
+        "slug": "shortsword",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "10 gp",
+        "damage_dice": "1d6"
+      },
+      {
+        "name": "Trident",
+        "description": "A three-pronged trident, often associated with underwater combat and sea-faring warriors.",
+        "slug": "trident",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "4 lb.",
+        "cost": "5 gp",
+        "damage_dice": "1d6"
+      },
+      {
+        "name": "War pick",
+        "description": "A sturdy war pick, designed for puncturing armor and dealing precise blows.",
+        "slug": "war-pick",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "5 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Warhammer",
+        "description": "A versatile warhammer, effective against armored foes and commonly used by dwarven warriors.",
+        "slug": "warhammer",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "2 lb.",
+        "cost": "15 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Whip",
+        "description": "A flexible whip, ideal for disarming opponents and controlling the battlefield.",
+        "slug": "whip",
+        "type": "Weapons",
+        "category": "Martial Melee Weapons",
+        "weight": "3 lb.",
+        "cost": "2 gp",
+        "damage_dice": "1d4"
+      },
+      {
+        "name": "Blowgun",
+        "description": "A silent blowgun, used by stealthy characters for delivering poisoned darts from a distance.",
+        "slug": "blowgun",
+        "type": "Weapons",
+        "category": "Martial Ranged Weapons",
+        "weight": "1 lb.",
+        "cost": "10 gp",
+        "damage_dice": "1"
+      },
+      {
+        "name": "Crossbow, hand",
+        "description": "A compact hand crossbow, suitable for quick and stealthy ranged attacks.",
+        "slug": "crossbow-hand",
+        "type": "Weapons",
+        "category": "Martial Ranged Weapons",
+        "weight": "3 lb.",
+        "cost": "75 gp",
+        "damage_dice": "1d6"
+      },
+      {
+        "name": "Crossbow, heavy",
+        "description": "A large and powerful heavy crossbow, capable of delivering devastating blows from a distance.",
+        "slug": "crossbow-heavy",
+        "type": "Weapons",
+        "category": "Martial Ranged Weapons",
+        "weight": "18 lb.",
+        "cost": "50 gp",
+        "damage_dice": "1d10"
+      },
+      {
+        "name": "Longbow",
+        "description": "A traditional longbow, favored by archers for its accuracy and long-range capabilities.",
+        "slug": "longbow",
+        "type": "Weapons",
+        "category": "Martial Ranged Weapons",
+        "weight": "2 lb.",
+        "cost": "50 gp",
+        "damage_dice": "1d8"
+      },
+      {
+        "name": "Net",
+        "description": "A thrown net, used to restrain and incapacitate enemies rather than causing direct harm.",
+        "slug": "net",
+        "type": "Weapons",
+        "category": "Martial Ranged Weapons",
+        "weight": "3 lb.",
+        "cost": "1 gp",
+        "damage_dice": "0"
+      }
+    ]
