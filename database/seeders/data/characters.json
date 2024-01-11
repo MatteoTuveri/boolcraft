@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Elowen Firecaster",
+        "description": "Hailing from a mystical village hidden in the ancient forests, Elowen Firecaster is a skilled magic user with a deep connection to the elemental forces. Trained by the Elders of her secluded community, she now ventures into the world to unravel the secrets of her magical lineage.",
+        "type_id": 1,
+        "attack": 80,
+        "defence": 60,
+        "speed": 70,
+        "life": 100
+    },
+    {
+        "name": "Darian Stormblade",
+        "description": "Born in the ruins of a once-great city, Darian Stormblade is a master of swordplay, honing his skills amidst the remnants of a fallen civilization. His relentless pursuit of justice drives him to confront the darkness that haunts the abandoned streets and forgotten alleys.",
+        "type_id": 2,
+        "attack": 75,
+        "defence": 65,
+        "speed": 75,
+        "life": 95
+    },
+    {
+        "name": "Lorien Swiftshot",
+        "description": "Raised in a nomadic tribe on the outskirts of the vast desert, Lorien Swiftshot has become a skilled archer, relying on her keen eyes and exceptional agility to survive in the harsh environment. Her arrows strike true, guided by the wisdom passed down from generations of desert wanderers.",
+        "type_id": 3,
+        "attack": 85,
+        "defence": 55,
+        "speed": 80,
+        "life": 110
+    },
+    {
+        "name": "Gromm Stonecrusher",
+        "description": "A proud member of the formidable orc clans, Gromm Stonecrusher boasts unmatched strength and combat prowess. Hailing from the desolate mountains, he seeks to unite the scattered orc tribes under a single banner, forging a new legacy for his people.",
+        "type_id": 4,
+        "attack": 90,
+        "defence": 50,
+        "speed": 85,
+        "life": 120
+    },
+    {
+        "name": "Seraphina Lightbringer",
+        "description": "Born in a humble village on the outskirts of a grand cathedral, Seraphina Lightbringer discovered her divine healing powers at an early age. Guided by her unwavering faith, she embarks on a quest to bring hope and healing to the war-torn lands devastated by darkness.",
+        "type_id": 5,
+        "attack": 70,
+        "defence": 70,
+        "speed": 65,
+        "life": 90
+    },
+    {
+        "name": "Malachi Darkthorn",
+        "description": "Hailing from the shadows, Malachi Darkthorn is a practitioner of dark arts, drawing power from the depths of forbidden knowledge. His mysterious origins and ominous presence make him a feared figure, as he weaves spells that blur the line between life and death.",
+        "type_id": 6,
+        "attack": 95,
+        "defence": 45,
+        "speed": 95,
+        "life": 130
+    },
+    {
+        "name": "Cyrus Ironheart",
+        "description": "Raised in a training academy devoted to the art of sword fighting, Cyrus Ironheart is a disciplined swordman known for his swift maneuvers and precise strikes. Trained from a young age, he now seeks to prove his mettle on the battlefield and carve his name into the annals of history.",
+        "type_id": 7,
+        "attack": 60,
+        "defence": 75,
+        "speed": 55,
+        "life": 85
+    },
+    {
+        "name": "Elysia Shadowstalker",
+        "description": "Hailing from the shadows, Elysia Shadowstalker is a rogue archer with a penchant for stealth and deadly precision. Born in the clandestine guilds of shadow, she now navigates the world unseen, using her skills to unravel political intrigues and hidden dangers.",
+        "type_id": 8,
+        "attack": 80,
+        "defence": 60,
+        "speed": 70,
+        "life": 100
+    },
+    {
+        "name": "Thalasia Starweaver",
+        "description": "A wise mage with a mysterious past, Thalasia Starweaver wields an ancient staff imbued with the power of time manipulation. Born in a hidden sanctuary of arcane knowledge, she now seeks to preserve the delicate balance of time and magic in a world on the brink of chaos.",
+        "type_id": 9,
+        "attack": 85,
+        "defence": 55,
+        "speed": 80,
+        "life": 110
+    },
+    {
+        "name": "Faelan Shadowblade",
+        "description": "A dual-wielding sword master with a troubled past, Faelan Shadowblade is known for unmatched speed and deadly precision. Raised among a secretive order of warriors, he carries the weight of ancient oaths and strives to redeem the honor of his lineage.",
+        "type_id": 10,
+        "attack": 70,
+        "defence": 70,
+        "speed": 65,
+        "life": 90
+    }
+]
