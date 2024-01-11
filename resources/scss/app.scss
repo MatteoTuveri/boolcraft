@@ -9,6 +9,10 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+
+
+.img-card {
+    width: 100%;
+    height: calc(100wv/3);
+    object-fit: cover;
 }
