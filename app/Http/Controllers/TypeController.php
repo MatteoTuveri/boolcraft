@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreTypeRequest;
+use App\Http\Requests\UpdateTypeRequest;
 use App\Models\Type;
 use Illuminate\Http\Request;
 
@@ -27,9 +29,12 @@ class TypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreTypeRequest $request)
     {
         //
+        $form_data = $request->validated();
+        $new_type = Type::create($form_data);
+        return to_route('types.show', $new_type->id);
     }
 
     /**
@@ -37,7 +42,7 @@ class TypeController extends Controller
      */
     public function show(Type $type)
     {
-        return view('types.show');
+        return view('types.show', compact('type'));
     }
 
     /**
@@ -45,15 +50,19 @@ class TypeController extends Controller
      */
     public function edit(Type $type)
     {
-        return view('types.edit');
+        return view('types.edit', compact('type'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Type $type)
+    public function update(UpdateTypeRequest $request, Type $type)
     {
         //
+        $form_data = $request->validated();
+        $type->fill($form_data);
+        $type->update();
+        return to_route('types.show', $type->id);
     }
 
     /**
