@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <section class="container">
-        <h1>Section title</h1>
+        <h1>Types</h1>
         <a href="{{ route('types.index') }}" class="mx-1">Types</a>
         <a href="{{ route('items.index') }}" class="mx-1">Items</a>
         <a href="{{ route('characters.index') }}" class="mx-1">Characters</a>
@@ -23,6 +23,8 @@
                         <div class="card">
 
                             <div class="card-body">
+                                <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
+                                    alt="{{ $type->name }}" class="img-card">
                                 <h5 class="card-title">{{ $type->name }}</h5>
                                 <a class="btn btn-primary" href=" {{ route('types.show', $type->id) }}">Type Details</a>
                                 <p>{{ substr($type->description, 0, 200) . '...' }}</p>
