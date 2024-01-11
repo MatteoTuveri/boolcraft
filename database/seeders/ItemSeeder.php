@@ -20,6 +20,7 @@ class ItemSeeder extends Seeder
 
             Item::create([
                 'name' => $itemData['name'],
+                'description' => $itemData['description'],
                 'slug' => $itemData['slug'],
                 'category' => $itemData['category'],
                 'type' => $itemData['type'],
