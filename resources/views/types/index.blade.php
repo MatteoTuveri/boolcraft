@@ -27,7 +27,8 @@
                                     alt="{{ $type->name }}" class="img-card">
                                 <h5 class="card-title">{{ $type->name }}</h5>
                                 <a class="btn btn-primary" href=" {{ route('types.show', $type->id) }}">Type Details</a>
-                                <p>{{ substr($type->description, 0, 200) . '...' }}</p>
+                                <pre>{{ substr($type->description, 0, 200) . '...' }}</pre>
+
                                 <form action="{{ route('types.destroy', $type->id) }}" method="post">
                                     @csrf
                                     @method('DELETE')

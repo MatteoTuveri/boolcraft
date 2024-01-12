@@ -33,7 +33,7 @@
                 <div class="col-12 col-md-6">
                     <h2 class="card-title mb-4">{{ $type->name }}</h2>
 
-                    <p class="mb-4">{{ $type->description }}</p>
+                    <pre class="mb-4">{{ $type->description }}</pre>
                     <a class="btn btn-primary" href=" {{ route('types.edit', $type->id) }}">Type Modify</a>
                     <form action="{{ route('types.destroy', $type->id) }}" method="post">
                         @csrf
