@@ -47,7 +47,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        return view('admin.characters.show');
+        return view('admin.characters.show', compact('character'));
     }
 
     /**
@@ -55,7 +55,7 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('admin.characters.edit');
+        return view('admin.characters.edit', compact('character'));
     }
 
     /**
