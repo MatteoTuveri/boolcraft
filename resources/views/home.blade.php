@@ -5,6 +5,10 @@
 @endphp
 @extends('layouts.app')
 @section('content')
+
+  
+      
+
 <h1 class="text-center mb-3">Home</h1>
     <section class="container d-flex justify-content-center">
         <div class="mx-1">
@@ -34,5 +38,6 @@
                     </div>
             </div>
         </div>
+
     </section>
 @endsection
