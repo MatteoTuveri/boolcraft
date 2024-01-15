@@ -11,8 +11,18 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 
 
+
 .img-card {
     width: 100%;
     height: calc(100wv/3);
     object-fit: cover;
 }
+
+h1 {
+    color: $text-color;
+}
+.character-card {
+    border: 2px solid red;
+    margin: 5px;
+}
+
