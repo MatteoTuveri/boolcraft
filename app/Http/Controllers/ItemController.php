@@ -14,8 +14,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Item::all();
-        return view('items.index', compact('items'));
+        return view('admin.items.index');
     }
 
     /**
@@ -23,7 +22,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        return view('items.create');
+        return view('admin.items.create');
     }
 
     /**
@@ -43,7 +42,7 @@ class ItemController extends Controller
      */
     public function show(Item $item)
     {
-        return view('items.show', compact('item'));
+        return view('admin.items.show');
     }
 
     /**
@@ -51,7 +50,7 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        return view('items.edit', compact('item'));
+        return view('admin.items.edit');
     }
 
     /**

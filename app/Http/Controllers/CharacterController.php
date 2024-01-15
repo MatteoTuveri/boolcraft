@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Character;
+use App\Http\Requests\StoreCharacterRequest;
+use App\Http\Requests\UpdateCharacterRequest;
 use Illuminate\Http\Request;
+
 
 class CharacterController extends Controller
 {
@@ -12,9 +15,9 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        $characters= Character::all();
+        $characters = Character::all();
 
-        return view('characters.index',compact('characters'));
+        return view('admin.characters.index', compact('characters'));
     }
 
     /**
@@ -22,15 +25,21 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        return view('characters.create');
+        return view('admin.characters.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreCharacterRequest $request)
     {
-        //
+        $form_data = $request->validated();
+
+
+
+        $form_data['type_id'] = rand(1, 12);
+        $new_character = Character::create($form_data);
+        return to_route('characters.show', $new_character->id);
     }
 
     /**
@@ -38,7 +47,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        return view('characters.show');
+        return view('admin.characters.show', compact('character'));
     }
 
     /**
@@ -46,15 +55,18 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('characters.edit');
+        return view('admin.characters.edit', compact('character'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Character $character)
+    public function update(UpdateCharacterRequest $request, Character $character)
     {
-        //
+        $form_data = $request->validated();
+        $character->fill($form_data);
+        $character->update();
+        return to_route('admin.characters.show', $character->id);
     }
 
     /**
@@ -62,6 +74,7 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        $character->delete();
+        return to_route('admin.characters.index', $character->id)->with('message', " $character->name è stato eliminato");
     }
 }

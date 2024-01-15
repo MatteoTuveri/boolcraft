@@ -2,9 +2,9 @@
 @section('content')
     <section class="container">
         <h1>Types</h1>
-        <a href="{{ route('types.index') }}" class="mx-1">Types</a>
-        <a href="{{ route('items.index') }}" class="mx-1">Items</a>
-        <a href="{{ route('characters.index') }}" class="mx-1">Characters</a>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">Types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
 
 
@@ -26,10 +26,11 @@
                                 <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
                                     alt="{{ $type->name }}" class="img-card">
                                 <h5 class="card-title">{{ $type->name }}</h5>
-                                <a class="btn btn-primary" href=" {{ route('types.show', $type->id) }}">Type Details</a>
+                                <a class="btn btn-primary" href=" {{ route('admin.types.show', $type->id) }}">Type
+                                    Details</a>
                                 <pre>{{ substr($type->description, 0, 200) . '...' }}</pre>
 
-                                <form action="{{ route('types.destroy', $type->id) }}" method="post">
+                                <form action="{{ route('admin.types.destroy', $type->id) }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger cancel-button"
@@ -45,7 +46,8 @@
             </div>
 
             <div class=" py-5 d-flex justify-content-center">
-                <button class="btn btn-outline-light"><a href="{{ route('types.create') }}"><i class="fa-solid fa-plus"></i>
+                <button class="btn btn-outline-light"><a href="{{ route('admin.types.create') }}"><i
+                            class="fa-solid fa-plus"></i>
                         Add new type</a></button>
             </div>
 
