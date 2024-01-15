@@ -1,0 +1,38 @@
+[
+    {
+        "name": "michele",
+        "email": "michele@michele.it",
+        "nickname": "burillu",
+        "password": 12345678
+    },
+    {
+        "name": "matteot",
+        "email": "matteot@matteo.it",
+        "nickname": "matte",
+        "password": 12345678
+    },
+    {
+        "name": "matteop",
+        "email": "matteop@matteo.it",
+        "nickname": "teoma",
+        "password": 12345678
+    },
+    {
+        "name": "cristian",
+        "email": "cristian@cristian.it",
+        "nickname": "cris",
+        "password": 12345678
+    },
+    {
+        "name": "chiara",
+        "email": "chiara@chiara.it",
+        "nickname": "ponte",
+        "password": 12345678
+    },
+    {
+        "name": "valerio",
+        "email": "valerio@valerio.it",
+        "nickname": "vale46",
+        "password": 12345678
+    }
+]
