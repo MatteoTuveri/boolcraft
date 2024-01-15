@@ -12,3 +12,7 @@ $fa-font-path: "../fonts/webfonts" !default;
 h1 {
     color: $text-color;
 }
+.character-card {
+    border: 2px solid red;
+    margin: 5px;
+}
