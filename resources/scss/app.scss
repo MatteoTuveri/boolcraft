@@ -26,3 +26,17 @@ h1 {
     margin: 5px;
 }
 
+.bg-pers{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,31,1) 64%);
+    height: 96.5vh;
+    margin-top: -25px;
+    padding-top: 25px;
+}
+
+.input{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+}
+

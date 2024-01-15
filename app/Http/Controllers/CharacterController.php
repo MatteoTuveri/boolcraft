@@ -15,9 +15,9 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        $characters= Character::all();
+        $characters = Character::all();
 
-        return view('characters.index',compact('characters'));
+        return view('admin.characters.index', compact('characters'));
     }
 
     /**
@@ -25,7 +25,7 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        return view('characters.create');
+        return view('admin.characters.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        return view('characters.show', compact('character'));
+        return view('admin.characters.show');
     }
 
     /**
@@ -55,7 +55,7 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('characters.edit', compact('character'));
+        return view('admin.characters.edit');
     }
 
     /**
