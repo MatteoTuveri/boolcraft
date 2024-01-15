@@ -66,7 +66,7 @@ class CharacterController extends Controller
         $form_data = $request->validated();
         $character->fill($form_data);
         $character->update();
-        return to_route('characters.show', $character->id);
+        return to_route('admin.characters.show', $character->id);
     }
 
     /**
@@ -75,6 +75,6 @@ class CharacterController extends Controller
     public function destroy(Character $character)
     {
         $character->delete();
-        return to_route('characters.index', $character->id)->with('message', " $character->name è stato eliminato");
+        return to_route('admin.characters.index', $character->id)->with('message', " $character->name è stato eliminato");
     }
 }
