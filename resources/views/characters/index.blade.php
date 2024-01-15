@@ -11,9 +11,14 @@
                         <p class="card-text">Speed: {{ $character->speed }}</p>
                         <p class="card-text">Life: {{ $character->life }}</p>
                     </div>
+                    <a class="btn btn-primary" href=" {{ route('characters.show', $character->id) }}">Details</a>
                 </div>
             </div>
             <hr>
         @endforeach
+        <div class=" py-5 d-flex justify-content-center">
+            <button class="btn btn-outline-light"><a href="{{ route('characters.create') }}"><i class="fa-solid fa-plus"></i>
+                    Add new character</a></button>
+        </div>
     </div>
 </div>
