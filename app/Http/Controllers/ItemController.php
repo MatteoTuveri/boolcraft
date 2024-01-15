@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreItemRequest;
+use App\Http\Requests\UpdateItemRequest;
+use Illuminate\Support\Str;
 
 class ItemController extends Controller
 {
@@ -26,9 +28,13 @@ class ItemController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreItemRequest $request)
     {
-        //
+        $formData = $request->validated();
+        $slug = Str::slug($formData['name'], '-');
+        $formData['slug'] = $slug;
+        $item = Item::create($formData);
+        return redirect()->route('items.show', $item->id);
     }
 
     /**
@@ -50,9 +56,13 @@ class ItemController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Item $item)
+    public function update(UpdateItemRequest $request, Item $item)
     {
-        //
+        $formData = $request->validated();
+        $slug = Str::slug($formData['name'], '-');
+        $formData['slug'] = $slug;
+        $item->update($formData);
+        return redirect()->route('items.show', $item->id);
     }
 
     /**
@@ -60,6 +70,7 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        return to_route('items.index')->with('message',"$item->name delete");
     }
 }
