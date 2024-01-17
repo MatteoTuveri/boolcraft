@@ -2,9 +2,9 @@
 @section('content')
     <section class="container">
         <h1>{{ $type->name }}</h1>
-        <a href="{{ route('types.index') }}" class="mx-1">Types</a>
-        <a href="{{ route('items.index') }}" class="mx-1">Items</a>
-        <a href="{{ route('characters.index') }}" class="mx-1">Characters</a>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">Types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
 
 
@@ -24,7 +24,7 @@
 
                         <div class="card-body">
                             @if ($type->image)
-                                <img src="{{asset('storage/'. $project->image)}}" alt="{{ $type->name }}" class="img-card">
+                                <img src="{{asset('storage/'. $type->image)}}" alt="{{ $type->name }}" class="img-card">
                             @else
                                 <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg" alt="{{ $type->name }}" class="img-card">
                             @endif
@@ -35,8 +35,8 @@
                     <h2 class="card-title mb-4">{{ $type->name }}</h2>
 
                     <pre class="mb-4">{{ $type->description }}</pre>
-                    <a class="btn btn-primary" href=" {{ route('types.edit', $type->id) }}">Type Modify</a>
-                    <form action="{{ route('types.destroy', $type->id) }}" method="post">
+                    <a class="btn btn-primary" href=" {{ route('admin.types.edit', $type->id) }}">Type Modify</a>
+                    <form action="{{ route('admin.types.destroy', $type->id) }}" method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger cancel-button" data-item-title="{{ $type->name }}">
@@ -50,7 +50,7 @@
             </div>
 
             <div class=" py-5 d-flex justify-content-center">
-                <button class="btn btn-outline-light"><a href="{{ route('types.create') }}"><i
+                <button class="btn btn-outline-light"><a href="{{ route('admin.types.create') }}"><i
                             class="fa-solid fa-plus"></i>
                         Add new type</a></button>
             </div>
