@@ -6,7 +6,8 @@
         "attack": 80,
         "defence": 60,
         "speed": 70,
-        "life": 100
+        "life": 100,
+        "image":""
     },
     {
         "name": "Darian Stormblade",
@@ -15,7 +16,8 @@
         "attack": 75,
         "defence": 65,
         "speed": 75,
-        "life": 95
+        "life": 95,
+        "image":""
     },
     {
         "name": "Lorien Swiftshot",
@@ -24,7 +26,8 @@
         "attack": 85,
         "defence": 55,
         "speed": 80,
-        "life": 110
+        "life": 110,
+        "image":""
     },
     {
         "name": "Gromm Stonecrusher",
@@ -33,7 +36,8 @@
         "attack": 90,
         "defence": 50,
         "speed": 85,
-        "life": 120
+        "life": 120,
+        "image":""
     },
     {
         "name": "Seraphina Lightbringer",
@@ -42,7 +46,8 @@
         "attack": 70,
         "defence": 70,
         "speed": 65,
-        "life": 90
+        "life": 90,
+        "image":""
     },
     {
         "name": "Malachi Darkthorn",
@@ -51,7 +56,8 @@
         "attack": 95,
         "defence": 45,
         "speed": 95,
-        "life": 130
+        "life": 130,
+        "image":""
     },
     {
         "name": "Cyrus Ironheart",
@@ -60,7 +66,8 @@
         "attack": 60,
         "defence": 75,
         "speed": 55,
-        "life": 85
+        "life": 85,
+        "image":""
     },
     {
         "name": "Elysia Shadowstalker",
@@ -69,7 +76,8 @@
         "attack": 80,
         "defence": 60,
         "speed": 70,
-        "life": 100
+        "life": 100,
+        "image":""
     },
     {
         "name": "Thalasia Starweaver",
@@ -78,7 +86,8 @@
         "attack": 85,
         "defence": 55,
         "speed": 80,
-        "life": 110
+        "life": 110,
+        "image":""
     },
     {
         "name": "Faelan Shadowblade",
@@ -87,6 +96,7 @@
         "attack": 70,
         "defence": 70,
         "speed": 65,
-        "life": 90
+        "life": 90,
+        "image":""
     }
 ]

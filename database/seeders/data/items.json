@@ -7,7 +7,8 @@
         "category": "Simple Melee Weapons",
         "weight": "2 lb.",
         "cost": "1 sp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Dagger",
@@ -17,7 +18,8 @@
         "category": "Simple Melee Weapons",
         "weight": "1 lb.",
         "cost": "2 gp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Greatclub",
@@ -27,7 +29,8 @@
         "category": "Simple Melee Weapons",
         "weight": "10 lb.",
         "cost": "2 sp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
     },
     {
         "name": "Handaxe",
@@ -37,7 +40,8 @@
         "category": "Simple Melee Weapons",
         "weight": "2 lb.",
         "cost": "5 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Javelin",
@@ -47,7 +51,8 @@
         "category": "Simple Melee Weapons",
         "weight": "2 lb.",
         "cost": "5 sp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Light hammer",
@@ -57,7 +62,8 @@
         "category": "Simple Melee Weapons",
         "weight": "2 lb.",
         "cost": "2 gp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Mace",
@@ -67,7 +73,8 @@
         "category": "Simple Melee Weapons",
         "weight": "4 lb.",
         "cost": "5 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Quarterstaff",
@@ -77,7 +84,8 @@
         "category": "Simple Melee Weapons",
         "weight": "4 lb.",
         "cost": "2 sp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Sickle",
@@ -87,7 +95,8 @@
         "category": "Simple Melee Weapons",
         "weight": "2 lb.",
         "cost": "1 gp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Spear",
@@ -97,7 +106,8 @@
         "category": "Simple Melee Weapons",
         "weight": "3 lb.",
         "cost": "1 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Crossbow, light",
@@ -107,7 +117,8 @@
         "category": "Simple Ranged Weapons",
         "weight": "5 lb.",
         "cost": "25 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
     },
     {
         "name": "Dart",
@@ -117,7 +128,8 @@
         "category": "Simple Ranged Weapons",
         "weight": "1/4 lb.",
         "cost": "5 cp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Shortbow",
@@ -127,7 +139,8 @@
         "category": "Simple Ranged Weapons",
         "weight": "2 lb.",
         "cost": "25 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
     },
     {
         "name": "Sling",
@@ -137,7 +150,8 @@
         "category": "Simple Ranged Weapons",
         "weight": "0 lb.",
         "cost": "1 sp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
     },
     {
         "name": "Battleaxe",
@@ -147,7 +161,8 @@
         "category": "Martial Melee Weapons",
         "weight": "4 lb.",
         "cost": "10 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
     },
     {
         "name": "Flail",
@@ -157,7 +172,8 @@
         "category": "Martial Melee Weapons",
         "weight": "2 lb.",
         "cost": "10 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Glaive",
@@ -167,7 +183,8 @@
         "category": "Martial Melee Weapons",
         "weight": "6 lb.",
         "cost": "20 gp",
-        "damage_dice": "1d10"
+        "damage_dice": "1d10",
+        "image":""
       },
       {
         "name": "Greataxe",
@@ -177,7 +194,8 @@
         "category": "Martial Melee Weapons",
         "weight": "7 lb.",
         "cost": "30 gp",
-        "damage_dice": "1d12"
+        "damage_dice": "1d12",
+        "image":""
       },
       {
         "name": "Greatsword",
@@ -187,7 +205,8 @@
         "category": "Martial Melee Weapons",
         "weight": "6 lb.",
         "cost": "50 gp",
-        "damage_dice": "2d6"
+        "damage_dice": "2d6",
+        "image":""
       },
       {
         "name": "Halberd",
@@ -197,7 +216,8 @@
         "category": "Martial Melee Weapons",
         "weight": "6 lb.",
         "cost": "20 gp",
-        "damage_dice": "1d10"
+        "damage_dice": "1d10",
+        "image":""
       },
       {
         "name": "Lance",
@@ -207,7 +227,8 @@
         "category": "Martial Melee Weapons",
         "weight": "6 lb.",
         "cost": "10 gp",
-        "damage_dice": "1d12"
+        "damage_dice": "1d12",
+        "image":""
       },
       {
         "name": "Longsword",
@@ -217,7 +238,8 @@
         "category": "Martial Melee Weapons",
         "weight": "3 lb.",
         "cost": "15 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Maul",
@@ -227,7 +249,8 @@
         "category": "Martial Melee Weapons",
         "weight": "10 lb.",
         "cost": "10 gp",
-        "damage_dice": "2d6"
+        "damage_dice": "2d6",
+        "image":""
       },
       {
         "name": "Morningstar",
@@ -237,7 +260,8 @@
         "category": "Martial Melee Weapons",
         "weight": "4 lb.",
         "cost": "15 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Pike",
@@ -247,7 +271,8 @@
         "category": "Martial Melee Weapons",
         "weight": "18 lb.",
         "cost": "5 gp",
-        "damage_dice": "1d10"
+        "damage_dice": "1d10",
+        "image":""
       },
       {
         "name": "Rapier",
@@ -257,7 +282,8 @@
         "category": "Martial Melee Weapons",
         "weight": "2 lb.",
         "cost": "25 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Scimitar",
@@ -267,7 +293,8 @@
         "category": "Martial Melee Weapons",
         "weight": "3 lb.",
         "cost": "25 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
       },
       {
         "name": "Shortsword",
@@ -277,7 +304,8 @@
         "category": "Martial Melee Weapons",
         "weight": "2 lb.",
         "cost": "10 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
       },
       {
         "name": "Trident",
@@ -287,7 +315,8 @@
         "category": "Martial Melee Weapons",
         "weight": "4 lb.",
         "cost": "5 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
       },
       {
         "name": "War pick",
@@ -297,7 +326,8 @@
         "category": "Martial Melee Weapons",
         "weight": "2 lb.",
         "cost": "5 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Warhammer",
@@ -307,7 +337,8 @@
         "category": "Martial Melee Weapons",
         "weight": "2 lb.",
         "cost": "15 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Whip",
@@ -317,7 +348,8 @@
         "category": "Martial Melee Weapons",
         "weight": "3 lb.",
         "cost": "2 gp",
-        "damage_dice": "1d4"
+        "damage_dice": "1d4",
+        "image":""
       },
       {
         "name": "Blowgun",
@@ -327,7 +359,8 @@
         "category": "Martial Ranged Weapons",
         "weight": "1 lb.",
         "cost": "10 gp",
-        "damage_dice": "1"
+        "damage_dice": "1",
+        "image":""
       },
       {
         "name": "Crossbow, hand",
@@ -337,7 +370,8 @@
         "category": "Martial Ranged Weapons",
         "weight": "3 lb.",
         "cost": "75 gp",
-        "damage_dice": "1d6"
+        "damage_dice": "1d6",
+        "image":""
       },
       {
         "name": "Crossbow, heavy",
@@ -347,7 +381,8 @@
         "category": "Martial Ranged Weapons",
         "weight": "18 lb.",
         "cost": "50 gp",
-        "damage_dice": "1d10"
+        "damage_dice": "1d10",
+        "image":""
       },
       {
         "name": "Longbow",
@@ -357,7 +392,8 @@
         "category": "Martial Ranged Weapons",
         "weight": "2 lb.",
         "cost": "50 gp",
-        "damage_dice": "1d8"
+        "damage_dice": "1d8",
+        "image":""
       },
       {
         "name": "Net",
@@ -367,6 +403,7 @@
         "category": "Martial Ranged Weapons",
         "weight": "3 lb.",
         "cost": "1 gp",
-        "damage_dice": "0"
+        "damage_dice": "0",
+        "image":""
       }
     ]
