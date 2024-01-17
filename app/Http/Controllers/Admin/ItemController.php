@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Item;
 use App\Http\Requests\StoreItemRequest;
 use App\Http\Requests\UpdateItemRequest;
-use Illuminate\Support\Str;
 
 class ItemController extends Controller
 {
@@ -14,7 +14,8 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return view('admin.items.index');
+        $items = Item::all();
+        return view('admin.items.index',compact('items'));
     }
 
     /**
@@ -31,7 +32,7 @@ class ItemController extends Controller
     public function store(StoreItemRequest $request)
     {
         $formData = $request->validated();
-        $slug = Str::slug($formData['name'], '-');
+        $slug = strtolower($formData['slug']);
         $formData['slug'] = $slug;
         $item = Item::create($formData);
         return redirect()->route('items.show', $item->id);
@@ -42,7 +43,7 @@ class ItemController extends Controller
      */
     public function show(Item $item)
     {
-        return view('admin.items.show');
+        return view('admin.items.show',compact('item'));
     }
 
     /**
@@ -50,7 +51,7 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        return view('admin.items.edit');
+        return view('admin.items.edit',compact('item'));
     }
 
     /**
@@ -59,9 +60,9 @@ class ItemController extends Controller
     public function update(UpdateItemRequest $request, Item $item)
     {
         $formData = $request->validated();
-        $slug = Str::slug($formData['name'], '-');
+        $slug = strtolower($formData['slug']);
         $formData['slug'] = $slug;
-        $item->update($formData);
+        $item = Item::create($formData);
         return redirect()->route('items.show', $item->id);
     }
 

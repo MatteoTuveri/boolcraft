@@ -23,10 +23,11 @@
                     <div class="card">
 
                         <div class="card-body">
-                            <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
-                                alt="{{ $type->name }}" class="">
-
-
+                            @if ($type->image)
+                                <img src="{{asset('storage/'. $project->image)}}" alt="{{ $type->name }}" class="img-card">
+                            @else
+                                <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg" alt="{{ $type->name }}" class="img-card">
+                            @endif
                         </div>
                     </div>
                 </div>

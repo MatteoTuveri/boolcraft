@@ -8,7 +8,7 @@
         "weight": "2 lb.",
         "cost": "1 sp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Dagger",
@@ -19,7 +19,7 @@
         "weight": "1 lb.",
         "cost": "2 gp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Greatclub",
@@ -30,7 +30,7 @@
         "weight": "10 lb.",
         "cost": "2 sp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Handaxe",
@@ -41,7 +41,7 @@
         "weight": "2 lb.",
         "cost": "5 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Javelin",
@@ -52,7 +52,7 @@
         "weight": "2 lb.",
         "cost": "5 sp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Light hammer",
@@ -63,7 +63,7 @@
         "weight": "2 lb.",
         "cost": "2 gp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Mace",
@@ -74,7 +74,7 @@
         "weight": "4 lb.",
         "cost": "5 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Quarterstaff",
@@ -85,7 +85,7 @@
         "weight": "4 lb.",
         "cost": "2 sp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Sickle",
@@ -96,7 +96,7 @@
         "weight": "2 lb.",
         "cost": "1 gp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Spear",
@@ -107,7 +107,7 @@
         "weight": "3 lb.",
         "cost": "1 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Crossbow, light",
@@ -118,7 +118,7 @@
         "weight": "5 lb.",
         "cost": "25 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Dart",
@@ -129,7 +129,7 @@
         "weight": "1/4 lb.",
         "cost": "5 cp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Shortbow",
@@ -140,7 +140,7 @@
         "weight": "2 lb.",
         "cost": "25 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Sling",
@@ -151,7 +151,7 @@
         "weight": "0 lb.",
         "cost": "1 sp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Battleaxe",
@@ -162,7 +162,7 @@
         "weight": "4 lb.",
         "cost": "10 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
     },
     {
         "name": "Flail",
@@ -173,7 +173,7 @@
         "weight": "2 lb.",
         "cost": "10 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Glaive",
@@ -184,7 +184,7 @@
         "weight": "6 lb.",
         "cost": "20 gp",
         "damage_dice": "1d10",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Greataxe",
@@ -195,7 +195,7 @@
         "weight": "7 lb.",
         "cost": "30 gp",
         "damage_dice": "1d12",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Greatsword",
@@ -206,7 +206,7 @@
         "weight": "6 lb.",
         "cost": "50 gp",
         "damage_dice": "2d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Halberd",
@@ -217,7 +217,7 @@
         "weight": "6 lb.",
         "cost": "20 gp",
         "damage_dice": "1d10",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Lance",
@@ -228,7 +228,7 @@
         "weight": "6 lb.",
         "cost": "10 gp",
         "damage_dice": "1d12",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Longsword",
@@ -239,7 +239,7 @@
         "weight": "3 lb.",
         "cost": "15 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Maul",
@@ -250,7 +250,7 @@
         "weight": "10 lb.",
         "cost": "10 gp",
         "damage_dice": "2d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Morningstar",
@@ -261,7 +261,7 @@
         "weight": "4 lb.",
         "cost": "15 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Pike",
@@ -272,7 +272,7 @@
         "weight": "18 lb.",
         "cost": "5 gp",
         "damage_dice": "1d10",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Rapier",
@@ -283,7 +283,7 @@
         "weight": "2 lb.",
         "cost": "25 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Scimitar",
@@ -294,7 +294,7 @@
         "weight": "3 lb.",
         "cost": "25 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Shortsword",
@@ -305,7 +305,7 @@
         "weight": "2 lb.",
         "cost": "10 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Trident",
@@ -316,7 +316,7 @@
         "weight": "4 lb.",
         "cost": "5 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "War pick",
@@ -327,7 +327,7 @@
         "weight": "2 lb.",
         "cost": "5 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Warhammer",
@@ -338,7 +338,7 @@
         "weight": "2 lb.",
         "cost": "15 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Whip",
@@ -349,7 +349,7 @@
         "weight": "3 lb.",
         "cost": "2 gp",
         "damage_dice": "1d4",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Blowgun",
@@ -360,7 +360,7 @@
         "weight": "1 lb.",
         "cost": "10 gp",
         "damage_dice": "1",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Crossbow, hand",
@@ -371,7 +371,7 @@
         "weight": "3 lb.",
         "cost": "75 gp",
         "damage_dice": "1d6",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Crossbow, heavy",
@@ -382,7 +382,7 @@
         "weight": "18 lb.",
         "cost": "50 gp",
         "damage_dice": "1d10",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Longbow",
@@ -393,7 +393,7 @@
         "weight": "2 lb.",
         "cost": "50 gp",
         "damage_dice": "1d8",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       },
       {
         "name": "Net",
@@ -404,6 +404,6 @@
         "weight": "3 lb.",
         "cost": "1 gp",
         "damage_dice": "0",
-        "image":""
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
       }
     ]

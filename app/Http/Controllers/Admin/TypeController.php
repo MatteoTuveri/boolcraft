@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
+use App\Models\Type;
 use App\Http\Requests\StoreTypeRequest;
 use App\Http\Requests\UpdateTypeRequest;
-use App\Models\Type;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TypeController extends Controller
 {
@@ -31,9 +32,12 @@ class TypeController extends Controller
      */
     public function store(StoreTypeRequest $request)
     {
-        //
         $form_data = $request->validated();
         $new_type = Type::create($form_data);
+        if ($request->hasFile('image')) {
+            $path = Storage::put('images', $form_data['image']);
+            $form_data['image'] = $path;
+        }
         return to_route('admin.types.show', $new_type->id);
     }
 
@@ -58,7 +62,6 @@ class TypeController extends Controller
      */
     public function update(UpdateTypeRequest $request, Type $type)
     {
-        //
         $form_data = $request->validated();
         $type->fill($form_data);
         $type->update();
@@ -70,6 +73,10 @@ class TypeController extends Controller
      */
     public function destroy(Type $type)
     {
-        //
+        if ($type->image) {
+            Storage::delete($type->image);
+        }
+        $type->delete();
+        return to_route('admin.types.index')->with('message', "$type->name eliminato con successo");
     }
 }

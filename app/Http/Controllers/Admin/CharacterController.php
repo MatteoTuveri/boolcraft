@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Character;
 use App\Http\Requests\StoreCharacterRequest;
 use App\Http\Requests\UpdateCharacterRequest;
-use Illuminate\Http\Request;
-
 
 class CharacterController extends Controller
 {
@@ -16,7 +15,6 @@ class CharacterController extends Controller
     public function index()
     {
         $characters = Character::all();
-
         return view('admin.characters.index', compact('characters'));
     }
 
@@ -33,12 +31,9 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
-        $form_data = $request->validated();
-
-
-
-        $form_data['type_id'] = rand(1, 12);
-        $new_character = Character::create($form_data);
+        $formData = $request->validated();
+        $formData['type_id'] = rand(1, 12);
+        $new_character = Character::create($formData);
         return to_route('characters.show', $new_character->id);
     }
 
@@ -63,8 +58,8 @@ class CharacterController extends Controller
      */
     public function update(UpdateCharacterRequest $request, Character $character)
     {
-        $form_data = $request->validated();
-        $character->fill($form_data);
+        $formData = $request->validated();
+        $character->fill($formData);
         $character->update();
         return to_route('admin.characters.show', $character->id);
     }

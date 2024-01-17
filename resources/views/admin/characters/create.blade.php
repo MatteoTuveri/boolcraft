@@ -32,36 +32,34 @@
                             {{ $message }}
                         </div>
                     @enderror
-                    <label for="attack">Attack</label>
-                    <input id="attack" value="{{ old('attack') }}" type="number" name="attack" class="mb-3 form-control @error('attack') is-invalid @enderror">
+                        <label for="attack">Attack</label>
+                        <input id="attack" value="{{ old('attack') }}" type="number" name="attack" class="mb-3 form-control @error('attack') is-invalid @enderror">
                     @error('attack')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
                     @enderror
                     <label for="defence">Defense</label>
                     <input id="defence" value="{{ old('defence') }}" type="number" name="defence" class="mb-3 form-control @error('defence') is-invalid @enderror">
                     @error('defence')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
                     @enderror
                     <label for="speed">Speed</label>
                     <input id="speed" value="{{ old('speed') }}" type="number" name="speed" class="mb-3 form-control @error('speed') is-invalid @enderror">
                     @error('speed')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
                     @enderror
                     <label for="life">Life</label>
                     <input id="life" value="{{ old('life') }}" type="number" name="life" class="mb-3 form-control @error('life') is-invalid @enderror">
                     @error('life')
-                    <div class="invalid-feedback">
-                    {{ $message }}
-                    </div>
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
                     @enderror
-
-
                     <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>

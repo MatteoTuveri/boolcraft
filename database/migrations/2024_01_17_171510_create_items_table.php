@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('type',100);
             $table->string('weight',10);
             $table->string('cost',20);
+            $table->string('image',255)->nullable();
             $table->timestamps();
         });
     }
