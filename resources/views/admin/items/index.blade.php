@@ -10,7 +10,7 @@
                         <p class="card-text">type: {{ $item->type }}</p>
                         <p class="card-text">weight: {{ $item->weight }}</p>
                         <p class="card-text">cost: {{ $item->cost }}</p>
-                        <p><a href="{{route('items.show', $item->id)}}">SHOW</a></p>
+                        <p><a href="{{route('admin.items.show', $item->id)}}">SHOW</a></p>
                     </div>
                 </div>
             </div>

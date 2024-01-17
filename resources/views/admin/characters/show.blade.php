@@ -3,9 +3,9 @@
 @section('content')
     <section class="container">
         <h1>{{ $character->name }}</h1>
-        <a href="{{ route('types.index') }}" class="mx-1">Types</a>
-        <a href="{{ route('items.index') }}" class="mx-1">Items</a>
-        <a href="{{ route('characters.index') }}" class="mx-1">Characters</a>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">Types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
 
 
@@ -43,8 +43,8 @@
                     <h2 class="card-title mb-4">{{ $character->name }}</h2>
 
                     <pre class="mb-4">{{ $character->description }}</pre>
-                    <a class="btn btn-primary" href=" {{ route('characters.edit', $character->id) }}">character Modify</a>
-                    <form action="{{ route('characters.destroy', $character->id) }}" method="post">
+                    <a class="btn btn-primary" href=" {{ route('admin.characters.edit', $character->id) }}">character Modify</a>
+                    <form action="{{ route('admin.characters.destroy', $character->id) }}" method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger cancel-button" data-item-title="{{ $character->name }}">
@@ -58,7 +58,7 @@
             </div>
 
             <div class=" py-5 d-flex justify-content-center">
-                <button class="btn btn-outline-light"><a href="{{ route('characters.create') }}"><i
+                <button class="btn btn-outline-light"><a href="{{ route('admin.characters.create') }}"><i
                             class="fa-solid fa-plus"></i>
                         Add new Character</a></button>
             </div>

@@ -2,9 +2,9 @@
 @section('content')
     <section class="container">
 
-        <a href="{{ route('types.index') }}" class="mx-1">types</a>
-        <a href="{{ route('items.index') }}" class="mx-1">Items</a>
-        <a href="{{ route('characters.index') }}" class="mx-1">Characters</a>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
 
 
@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Edit item {{$item->name}}:</h2>
-                <form action="{{ route('items.update', $item->id) }}" method="POST">
+                <form action="{{ route('admin.items.update', $item->id) }}" method="POST">
                     @method('PUT')
                     @csrf
                     

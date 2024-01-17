@@ -12,7 +12,7 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body d-flex-column">
                         <h5 class="card-title text-center">{{$type->name}}</h5>
-                        <a href="{{ route('types.index') }}" class="btn btn-primary">Go to types</a>
+                        <a href="{{ route('admin.types.index') }}" class="btn btn-primary">Go to types</a>
                     </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body d-flex-column">
                         <h5 class="card-title text-center">{{$item->name}}</h5>
-                        <a href="{{ route('items.index') }}" class="btn btn-primary">Go to items</a>
+                        <a href="{{ route('admin.items.index') }}" class="btn btn-primary">Go to items</a>
                     </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body d-flex-column">
                         <h5 class="card-title text-center">{{$character->name}}</h5>
-                        <a href="{{ route('characters.index') }}" class="btn btn-primary">Go to characters</a>
+                        <a href="{{ route('admin.characters.index') }}" class="btn btn-primary">Go to characters</a>
                     </div>
             </div>
         </div>
