@@ -14,20 +14,14 @@
         <div class="container">
 
             <div class="row gy-3 py-4">
-
-
-
-
-
-
                 <div class="col-12 col-md-6">
                     <div class="card">
 
-                        <div class="card-body">
-                            <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
-                                alt="{{ $character->name }}" class="">
-
-
+                        @if ($character->image)
+                            <img src="{{asset('storage/'. $character->image)}}" alt="{{ $character->name }}" class="img-card">
+                        @else
+                            <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg" alt="{{ $character->name }}" class="img-card">
+                        @endif
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Name: {{ $character->name }}</h5>

@@ -60,6 +60,18 @@
                             {{ $message }}
                         </div>
                     @enderror
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <img id="uploadPreview" width="100" src="https://via.placeholder.com/300x200">
+                        </div>
+                        <div class="mb-3">
+                                <label for="image">Image</label>
+                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image" value="{{old('image')}}">
+                                @error('image')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                        </div>
+                    </div>
                     <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
