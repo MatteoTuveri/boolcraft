@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Character;
 use App\Http\Requests\StoreCharacterRequest;
 use App\Http\Requests\UpdateCharacterRequest;
+use Illuminate\Support\Facades\Storage;
 
 class CharacterController extends Controller
 {
@@ -33,6 +34,10 @@ class CharacterController extends Controller
     {
         $formData = $request->validated();
         $formData['type_id'] = rand(1, 12);
+        if ($request->hasFile('image')) {
+            $path = Storage::put('images', $formData['image']);
+            $formData['image'] = $path;
+        }
         $new_character = Character::create($formData);
         return to_route('characters.show', $new_character->id);
     }
