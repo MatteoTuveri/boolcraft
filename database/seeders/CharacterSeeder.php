@@ -26,11 +26,14 @@ class CharacterSeeder extends Seeder
             $new_character->defence = $character["defence"];
             $new_character->speed = $character["speed"];
             $new_character->life = $character["life"];
+
             $new_character->image = CharacterSeeder::storeimage($character['image'], $character['name']);
             $new_character->save();
 
+            $new_character->items()->sync($character['items_id']);
+
         }
-        
+
     }
     public static function storeimage($img, $name)
     {
