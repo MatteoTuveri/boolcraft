@@ -32,7 +32,7 @@ class ItemController extends Controller
     public function store(StoreItemRequest $request)
     {
         $formData = $request->validated();
-        $slug = strtolower($formData['slug']);
+        $slug = strtolower($formData['name']);
         $formData['slug'] = $slug;
         $item = Item::create($formData);
         return redirect()->route('items.show', $item->id);
@@ -60,10 +60,10 @@ class ItemController extends Controller
     public function update(UpdateItemRequest $request, Item $item)
     {
         $formData = $request->validated();
-        $slug = strtolower($formData['slug']);
+        $slug = strtolower($formData['name']);
         $formData['slug'] = $slug;
         $item = Item::create($formData);
-        return redirect()->route('items.show', $item->id);
+        return redirect()->route('admin.items.show', $item->id);
     }
 
     /**
@@ -72,6 +72,6 @@ class ItemController extends Controller
     public function destroy(Item $item)
     {
         $item->delete();
-        return to_route('items.index')->with('message',"$item->name delete");
+        return to_route('admin.items.index')->with('message',"$item->name delete");
     }
 }
