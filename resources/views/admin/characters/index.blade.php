@@ -11,6 +11,9 @@
                         <p class="card-text">Speed: {{ $character->speed }}</p>
                         <p class="card-text">Life: {{ $character->life }}</p>
                     </div>
+                    <div>
+                        {{ $character->type->name }}
+                    </div>
                     <a class="btn btn-primary" href=" {{ route('admin.characters.show', $character->id) }}">Details</a>
                 </div>
             </div>

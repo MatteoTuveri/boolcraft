@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Character;
 use App\Http\Requests\StoreCharacterRequest;
 use App\Http\Requests\UpdateCharacterRequest;
+use App\Models\Item;
+use App\Models\Type;
 use Illuminate\Support\Facades\Storage;
 
 class CharacterController extends Controller
@@ -16,7 +18,9 @@ class CharacterController extends Controller
     public function index()
     {
         $characters = Character::all();
-        return view('admin.characters.index', compact('characters'));
+        $types = Type::all();
+        $items = Item::all();
+        return view('admin.characters.index', compact('characters','items','types'));
     }
 
     /**
@@ -24,7 +28,8 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        return view('admin.characters.create');
+        $items = Item::all();
+        return view('admin.characters.create',compact('items'));
     }
 
     /**
@@ -32,14 +37,17 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
-        $formData = $request->validated();
+        $formData = $request->all();
         $formData['type_id'] = rand(1, 12);
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
         }
         $new_character = Character::create($formData);
-        return to_route('characters.show', $new_character->id);
+        if ($request->has('items')) {
+            $new_character->items()->attach($request->items);
+        }
+        return to_route('admin.characters.show', $new_character->id);
     }
 
     /**

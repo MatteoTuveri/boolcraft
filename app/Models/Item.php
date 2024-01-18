@@ -9,4 +9,8 @@ class Item extends Model
 {
     use HasFactory;
     protected $fillable = ['name','description','slug','category','type', 'weight','cost','image'];
+
+    public function characters(){
+        return $this->belongsToMany(Character::class);
+    }
 }

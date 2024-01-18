@@ -24,6 +24,21 @@
                             {{ $message }}
                         </div>
                     @enderror
+                    <div class="mb-3">
+                        <div class="form-group">
+                            <h6>I tuoi oggetti</h6>
+                            @foreach ($items as $item)
+                                <div class="form-check @error('items') is-invalid @enderror">
+                                    <input type="checkbox" class="form-check-input" name="items[]" value="{{ $item->id }}"  {{ in_array($item->id, old('items',[])) ? 'checked' : '' }} >
+                                    <label class="form-check-label">
+                                    {{ $item->name }}
+                                     </label>
+                                </div>
+                            @endforeach
+                            @error('items')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
                     <label for="description">Description:</label>
                     <textarea id="description"  value="{{ old('description') }}" type="text" name="description"
                         class="mb-3 form-control @error('description') is-invalid @enderror"></textarea>
