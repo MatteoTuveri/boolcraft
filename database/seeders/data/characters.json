@@ -7,7 +7,8 @@
         "defence": 60,
         "speed": 70,
         "life": 100,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [1,4,5]
     },
     {
         "name": "Darian Stormblade",
@@ -17,7 +18,9 @@
         "defence": 65,
         "speed": 75,
         "life": 95,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [1,7,5,2]
+
     },
     {
         "name": "Lorien Swiftshot",
@@ -27,7 +30,8 @@
         "defence": 55,
         "speed": 80,
         "life": 110,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [3]
     },
     {
         "name": "Gromm Stonecrusher",
@@ -37,7 +41,8 @@
         "defence": 50,
         "speed": 85,
         "life": 120,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [6,8]
     },
     {
         "name": "Seraphina Lightbringer",
@@ -47,7 +52,8 @@
         "defence": 70,
         "speed": 65,
         "life": 90,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [4,5,9]
     },
     {
         "name": "Malachi Darkthorn",
@@ -57,7 +63,8 @@
         "defence": 45,
         "speed": 95,
         "life": 130,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [2,11,13]
     },
     {
         "name": "Cyrus Ironheart",
@@ -67,7 +74,8 @@
         "defence": 75,
         "speed": 55,
         "life": 85,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [6]
     },
     {
         "name": "Elysia Shadowstalker",
@@ -77,7 +85,8 @@
         "defence": 60,
         "speed": 70,
         "life": 100,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [12,15]
     },
     {
         "name": "Thalasia Starweaver",
@@ -87,7 +96,8 @@
         "defence": 55,
         "speed": 80,
         "life": 110,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [16,5]
     },
     {
         "name": "Faelan Shadowblade",
@@ -97,6 +107,7 @@
         "defence": 70,
         "speed": 65,
         "life": 90,
-        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE"
+        "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fdefault-vectors&psig=AOvVaw27K7jE_qDy9uT8Db03YOeQ&ust=1705599840688000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCICil9f85IMDFQAAAAAdAAAAABAE",
+        "items_id": [9]
     }
 ]
