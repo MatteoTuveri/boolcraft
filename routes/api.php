@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\TypeController;
+use App\Http\Controllers\Api\CharacterController;
+
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,7 +20,12 @@ use App\Http\Controllers\Api\TypeController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
 Route::controller(TypeController::class)->group(function () {
     Route::get('types', 'index');
     //Route::get('projects/{slug}', 'show');
 });
+
+Route::Get('/characters', [CharacterController::class,'index']);
+Route::Get('/characters/{id}', [CharacterController::class,'show']);
+
