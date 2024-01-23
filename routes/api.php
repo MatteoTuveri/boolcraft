@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\TypeController;
 use App\Http\Controllers\Api\CharacterController;
+use App\Http\Controllers\Api\ItemController;
 
 
 /*
@@ -29,3 +30,7 @@ Route::controller(TypeController::class)->group(function () {
 Route::Get('/characters', [CharacterController::class,'index']);
 Route::Get('/characters/{id}', [CharacterController::class,'show']);
 
+Route::controller(ItemController::class)->group(function () {
+    Route::get('items', 'index');
+    Route::get('items/{id}', 'show');
+});
