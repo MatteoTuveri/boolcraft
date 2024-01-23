@@ -32,5 +32,5 @@ Route::Get('/characters/{id}', [CharacterController::class,'show']);
 
 Route::controller(ItemController::class)->group(function () {
     Route::get('items', 'index');
-    Route::get('items/{id}', 'show');
+    Route::get('item/{id}', 'show');
 });

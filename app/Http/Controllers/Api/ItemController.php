@@ -18,18 +18,10 @@ class ItemController extends Controller
         );
     }
     public function show($id){
-        $item = Item::find($id);
-        if (!$item) {
-            return response()->json([
-                'success' => false,
-                'error' => 'item not found',
-            ]);
-        }
-        return response()->json(
-            [
-                'success' => true,
-                'results' => $item,
-            ]
-        );
+        $item = Item::where('id', $id)->first();
+        return response()->json([
+            'success' => true,
+            'result' => $item
+        ]);
     }
 }
