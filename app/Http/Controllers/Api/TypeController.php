@@ -16,5 +16,13 @@ class TypeController extends Controller
             'results' => $types
         ]);
         
+    }
+    public function show($id){
+
+        $type = Type::where('id', $id)->first();
+        return response()->json([
+            'success' => true,
+            'results' => $type
+        ]);
     } 
 }

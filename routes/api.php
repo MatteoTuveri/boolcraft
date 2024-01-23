@@ -24,7 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::controller(TypeController::class)->group(function () {
     Route::get('types', 'index');
-    //Route::get('projects/{slug}', 'show');
+    Route::get('types/{id}', 'show');
 });
 
 Route::Get('/characters', [CharacterController::class,'index']);
@@ -32,5 +32,5 @@ Route::Get('/characters/{id}', [CharacterController::class,'show']);
 
 Route::controller(ItemController::class)->group(function () {
     Route::get('items', 'index');
-    Route::get('item/{id}', 'show');
+    Route::get('items/{id}', 'show');
 });
