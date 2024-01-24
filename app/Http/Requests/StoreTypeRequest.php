@@ -23,6 +23,7 @@ class StoreTypeRequest extends FormRequest
     {
         return [
             'name'=>['required','max:200','unique:types'],
+            'description'=> 'nullable',
             'image'=>['nullable','image'],
         ];
     }
