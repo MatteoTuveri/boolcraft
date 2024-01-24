@@ -17,8 +17,8 @@
                     @csrf
                     
                     <label for="name">Name:</label>
-                    <input id="name" value="{{ old('name') }}" item="text" name="name"
-                        class="mb-3 form-control @error('name') is-invalid @enderror" required>
+                    <input id="name" value="{{ old('name') }}" type="text" name="name"
+                        class="mb-3 form-control @error('name') is-invalid @enderror">
                     @error('name')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -26,7 +26,7 @@
                     @enderror
 
                     <label for="description">Description:</label>
-                    <textarea id="description" item="text" name="description"
+                    <textarea id="description" type="text" name="description"
                         class="mb-3 form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                         <div class="invalid-feedback">
@@ -35,8 +35,8 @@
                     @enderror
 
                     <label for="category">category:</label>
-                    <input id="category" value="{{ old('category') }}" item="text" name="category"
-                        class="mb-3 form-control @error('category') is-invalid @enderror" required>
+                    <input id="category" value="{{ old('category') }}" type="text" name="category"
+                        class="mb-3 form-control @error('category') is-invalid @enderror" >
                     @error('category')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -44,8 +44,8 @@
                     @enderror
 
                     <label for="type">type:</label>
-                    <input id="type" value="{{ old('type') }}" item="text" name="type"
-                        class="mb-3 form-control @error('type') is-invalid @enderror" required>
+                    <input id="type" value="{{ old('type') }}" type="text" name="type"
+                        class="mb-3 form-control @error('type') is-invalid @enderror">
                     @error('type')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -53,8 +53,8 @@
                     @enderror
 
                     <label for="weight">weight:</label>
-                    <input id="weight" value="{{ old('weight') }}" item="text" name="weight"
-                        class="mb-3 form-control @error('weight') is-invalid @enderror" required>
+                    <input id="weight" value="{{ old('weight') }}" type="text" name="weight"
+                        class="mb-3 form-control @error('weight') is-invalid @enderror" >
                     @error('weight')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -62,15 +62,15 @@
                     @enderror
 
                     <label for="cost">cost:</label>
-                    <input id="cost" value="{{ old('cost') }}" item="text" name="cost"
-                        class="mb-3 form-control @error('cost') is-invalid @enderror" required>
+                    <input id="cost" value="{{ old('cost') }}" type="text" name="cost"
+                        class="mb-3 form-control @error('cost') is-invalid @enderror">
                     @error('cost')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                     @enderror
 
-                    <button item="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+                    <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
         </div>
