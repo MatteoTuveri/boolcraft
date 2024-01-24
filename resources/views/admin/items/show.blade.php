@@ -25,25 +25,25 @@
                 <div class="col-12 col-md-6">
                     <h2 class="card-title mb-4">{{ $item->name }}</h2>
 
-                    <pre class="mt-4">{{ $item->description }}</pre>
-                    <a class="btn btn-primary" href=" {{ route('admin.items.edit', $item->id) }}">item Modify</a>
-                    <form action="{{ route('admin.items.destroy', $item->id) }}" method="post">
-                        @csrf
-                        @method('DELETE')
-                        <button item="submit" class="btn btn-danger cancel-button" data-item-title="{{ $item->name }}">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </button>
-                
-                    </form>
+                    <p class="mt-4">Description: {{ $item->description }}</p>
+                    <p class="card-text">Category: {{ $item->category }}</p>
+                    <p class="card-text">Type: {{ $item->type }}</p>
+                    <p class="card-text">Weight: {{ $item->weight }}</p>
+                    <p class="card-text">Cost: {{ $item->cost }}</p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-warning" href=" {{ route('admin.items.edit', $item->id) }}"><i class="fa-solid fa-pencil"></i></a>
+                        <form action="{{ route('admin.items.destroy', $item->id) }}" method="post" class="mx-2">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger cancel-button" data-item-title="{{ $item->name }}">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-
-
             </div>
-
-            <div class=" py-5 d-flex justify-content-center">
+<!--             <div class=" py-5 d-flex justify-content-center">
                 <button class="btn btn-outline-light"><a href="{{ route('admin.items.create') }}"><i class="fa-solid fa-plus"></i> Add new item</a></button>
-            </div>
-
-
+            </div> -->
         </div>
     @endsection

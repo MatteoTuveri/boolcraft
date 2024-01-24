@@ -22,7 +22,17 @@ class UpdateTypeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name'=>['required','max:200','unique:types'],
+            'image'=>['nullable','image'],
+        ];
+    }
+    public function messages(): array
+    {
+        return [
+            'name.required' => 'Il nome è obbligatorio',
+            'name.max' => 'Il nome deve avere massimo :max caratteri',
+            'name.unique' => 'Questo tipo esiste già',
+            'image.image' => 'L\'immagine deve essere di tipo image',
         ];
     }
 }

@@ -32,7 +32,7 @@ class TypeController extends Controller
      */
     public function store(StoreTypeRequest $request)
     {
-        $form_data = $request->validated();
+        $form_data = $request->all();
         $new_type = Type::create($form_data);
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $form_data['image']);
@@ -62,7 +62,7 @@ class TypeController extends Controller
      */
     public function update(UpdateTypeRequest $request, Type $type)
     {
-        $form_data = $request->validated();
+        $form_data = $request->all();
         $type->fill($form_data);
         $type->update();
         return to_route('admin.types.show', $type->id);

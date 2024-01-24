@@ -37,8 +37,8 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
-        $formData = $request->all();
-        $formData['type_id'] = rand(1, 12);
+        $formData = $request->validated();
+        $formData['type_id'] = rand(1,12);
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
@@ -47,7 +47,7 @@ class CharacterController extends Controller
         if ($request->has('items')) {
             $new_character->items()->attach($request->items);
         }
-        return to_route('admin.characters.show', $new_character->id);
+        return redirect()->route('admin.characters.show', $new_character->id);
     }
 
     /**
