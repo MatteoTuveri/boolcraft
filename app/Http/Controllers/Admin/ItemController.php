@@ -7,7 +7,7 @@ use App\Models\Item;
 use App\Http\Requests\StoreItemRequest;
 use App\Http\Requests\UpdateItemRequest;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Support\Str;
 
 class ItemController extends Controller
 {
@@ -34,15 +34,14 @@ class ItemController extends Controller
     public function store(StoreItemRequest $request)
     {
         $formData = $request->validated();
-        dd($formData);
         // if ($request->hasFile('image') && $request->file('image')->isValid()) {
         //     $path = $request->file('image')->store('images');
         //     $formData['image'] = $path;
         // }
-        $slug = Str::slug($formData['name']);
+        $slug = Str::slug($formData['name'], '-');
         $formData['slug'] = $slug;
+
         $item = Item::create($formData);
-        dd($formData);
 
         return redirect()->route('admin.items.show', $item->id);
     }
@@ -69,7 +68,7 @@ class ItemController extends Controller
     public function update(UpdateItemRequest $request, Item $item)
     {
         $formData = $request->validated();
-        $slug = strtolower($formData['name']);
+        $slug = Str::slug($formData['name'], '-');
         $formData['slug'] = $slug;
         $item = Item::create($formData);
         return redirect()->route('admin.items.show', $item->id);

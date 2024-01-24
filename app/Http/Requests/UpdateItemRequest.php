@@ -25,7 +25,6 @@ class UpdateItemRequest extends FormRequest
         return [
             'name' => 'required|max:200',
             'description' => 'nullable',
-            'slug' => 'required|max:200',
             'category' => 'required|max:100',
             'type' => 'required|max:100',
             'weight' => 'required|max:10',
@@ -39,8 +38,6 @@ class UpdateItemRequest extends FormRequest
         return [
             'name.required' => 'Il campo Nome è obbligatorio.',
             'name.max' => 'Il campo Nome non può superare i 200 caratteri.',
-            'slug.required' => 'Il campo Slug è obbligatorio.',
-            'slug.max' => 'Il campo Slug non può superare i 200 caratteri.',
             'category.required' => 'Il campo Categoria è obbligatorio.',
             'category.max' => 'Il campo Categoria non può superare i 100 caratteri.',
             'type.required' => 'Il campo Tipo è obbligatorio.',
