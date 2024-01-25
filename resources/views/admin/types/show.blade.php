@@ -24,15 +24,16 @@
                 <h2 class="card-title mb-4">{{ $type->name }}</h2>
 
                 <pre class="mb-4">{{ $type->description }}</pre>
-                <a class="btn btn-primary" href=" {{ route('admin.types.edit', $type->id) }}">Type Modify</a>
-                <form action="{{ route('admin.types.destroy', $type->id) }}" method="post">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger cancel-button" data-item-title="{{ $type->name }}">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </button>
-
-                </form>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-primary" href=" {{ route('admin.types.edit', $type->id) }}">Type Modify</a>
+                    <form action="{{ route('admin.types.destroy', $type->id) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger cancel-button" data-item-title="{{ $type->name }}">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     @endsection
