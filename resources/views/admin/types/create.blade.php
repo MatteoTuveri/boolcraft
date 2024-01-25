@@ -21,7 +21,7 @@
                         </div>
                     @enderror
                     <label for="description">Description:</label>
-                    <textarea id="description" type="text" name="description"
+                    <textarea id="description" type="text" name="description" cols="30" rows="10"
                         class="mb-3 form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                         <div class="invalid-feedback">
