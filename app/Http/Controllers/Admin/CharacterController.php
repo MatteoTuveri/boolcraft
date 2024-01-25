@@ -29,7 +29,8 @@ class CharacterController extends Controller
     public function create()
     {
         $items = Item::all();
-        return view('admin.characters.create',compact('items'));
+        $types= Type::all();
+        return view('admin.characters.create',compact('items','types'));
     }
 
     /**
@@ -37,12 +38,15 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
+       
         $formData = $request->validated();
-        $formData['type_id'] = rand(1,12);
+        
+        //$formData['type_id'] = rand(1,12);
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
         }
+        
         $new_character = Character::create($formData);
         if ($request->has('items')) {
             $new_character->items()->attach($request->items);
@@ -63,7 +67,9 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('admin.characters.edit', compact('character'));
+        $types= Type::all();
+        $items= Item::all();
+        return view('admin.characters.edit', compact('character','types','items'));
     }
 
     /**
