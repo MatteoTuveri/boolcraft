@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Add new Type:</h2>
-                <form action="{{ route('admin.types.store') }}"enctype="multipart/form-data"  method="POST">
+                <form action="{{ route('admin.types.store') }}" enctype="multipart/form-data"  method="POST">
                     {{-- token --}}
                     @csrf
                     <label for="name">Name:</label>

@@ -11,15 +11,17 @@
         @foreach ($types as $type)
         <div class="col-12 col-md-4 col-lg-3">
             <div class="card">
-                <div class="card-body">
+                <div class="card-img items-img">
                     @if ($type->image)
-                    <img src="{{asset('storage/'. $type->image)}}" alt="{{ $type->name }}" class="img-card">
+                    <img src="{{asset('storage/'. $type->image)}}" alt="{{ $type->name }}" >
                     @else
                     <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
-                        alt="{{ $type->name }}" class="img-card">
+                        alt="{{ $type->name }}" >
                     @endif
+                </div>
+                <div class="card-body">
                     <h5 class="card-title">{{ $type->name }}</h5>
-                    <pre>{{ substr($type->description, 0, 200) . '...' }}</pre>
+                    <div class="mb-2">{{ substr($type->description, 0, 200) . '...' }}</div>
                     <div class="d-flex align-types-center">
                         <a class="btn btn-primary" href=" {{ route('admin.types.show', $type->id) }}"><i
                                 class="fa-regular fa-eye"></i></a>
