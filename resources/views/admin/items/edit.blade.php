@@ -12,13 +12,12 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Edit item {{$item->name}}:</h2>
-                <form action="{{ route('admin.items.update', $item->id) }}" method="POST">
+                <form action="{{ route('admin.items.update', $item->id) }}" method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
                     
                     <label for="name">Name:</label>
-                    <input id="name" value="{{ old('name'). $item->name }}" item="text" name="name"
-                        class="mb-3 form-control @error('name') is-invalid @enderror" required>
+                    <input id="name" value="{{ old('name') . $item->name}}" type="text" name="name" class="mb-3 form-control @error('name') is-invalid @enderror" >
                     @error('name')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -26,8 +25,9 @@
                     @enderror
 
                     <label for="description">Description:</label>
-                    <textarea id="description" item="text" name="description"
-                        class="mb-3 form-control @error('description') is-invalid @enderror">{{ old('description'). $item->description }}</textarea>
+                    <textarea id="description" type="text" name="description" class="mb-3 form-control @error('description') is-invalid @enderror">
+                        {{ old('description') . $item->description}}
+                    </textarea>
                     @error('description')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -35,8 +35,8 @@
                     @enderror
 
                     <label for="category">category:</label>
-                    <input id="category" value="{{ old('category'). $item->category }}" item="text" name="category"
-                        class="mb-3 form-control @error('category') is-invalid @enderror" required>
+                    <input id="category" value="{{ old('category') . $item->category }}" type="text" name="category"
+                        class="mb-3 form-control @error('category') is-invalid @enderror" >
                     @error('category')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -44,8 +44,8 @@
                     @enderror
 
                     <label for="type">type:</label>
-                    <input id="type" value="{{ old('type'). $item->type  }}" item="text" name="type"
-                        class="mb-3 form-control @error('type') is-invalid @enderror" required>
+                    <input id="type" value="{{ old('type') . $item->type }}" type="text" name="type"
+                        class="mb-3 form-control @error('type') is-invalid @enderror">
                     @error('type')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -53,8 +53,8 @@
                     @enderror
 
                     <label for="weight">weight:</label>
-                    <input id="weight" value="{{ old('weight'). $item->weight }}" item="text" name="weight"
-                        class="mb-3 form-control @error('weight') is-invalid @enderror" required>
+                    <input id="weight" value="{{ old('weight') . $item->weight}}" type="text" name="weight"
+                        class="mb-3 form-control @error('weight') is-invalid @enderror" >
                     @error('weight')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -62,15 +62,24 @@
                     @enderror
 
                     <label for="cost">cost:</label>
-                    <input id="cost" value="{{ old('cost'). $item->cost }}" item="text" name="cost"
-                        class="mb-3 form-control @error('cost') is-invalid @enderror" required>
+                    <input id="cost" value="{{ old('cost') . $item->cost }}" type="text" name="cost"
+                        class="mb-3 form-control @error('cost') is-invalid @enderror">
                     @error('cost')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                     @enderror
 
-                    <button item="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+                    <div class="mb-3">
+                        <label for="image">image</label>
+                        <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image" value="{{ old('image', $item->image) }}">
+                        @error('image')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
         </div>

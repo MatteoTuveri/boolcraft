@@ -30,6 +30,7 @@ class UpdateItemRequest extends FormRequest
             'weight' => 'required|max:10',
             'cost' => 'required|max:20',
             'image' => 'nullable|max:255',
+            'image'=>['nullable','image', 'mimes:jpeg,png,gif,bmp,svg'],
         ];
     }
 
@@ -46,7 +47,8 @@ class UpdateItemRequest extends FormRequest
             'weight.max' => 'Il campo Peso non può superare i 10 caratteri.',
             'cost.required' => 'Il campo Costo è obbligatorio.',
             'cost.numeric' => 'Il campo Costo deve essere un numero.',
-            'image.max' => 'Il campo Immagine non può superare i 255 caratteri.',
+            'image.image' => "Il campo Immagine deve essere un'immagine.",
+            'image.mimes'=>"l'immagine deve essere di tipo (.jpeg, png, .gif, .bmp, .svg)",
         ];
     }
 }

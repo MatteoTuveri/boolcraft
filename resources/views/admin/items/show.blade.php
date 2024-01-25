@@ -17,8 +17,7 @@
                     <div class="card">
 
                         <div class="card-body">
-                            <img style="width: 100%" src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
-                                alt="{{ $item->name }}" class="">
+                            <img style="width:100%" src="{{asset('storage/'.$item->image)}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -42,8 +41,8 @@
                     </div>
                 </div>
             </div>
-<!--             <div class=" py-5 d-flex justify-content-center">
+            <div class=" py-5 d-flex justify-content-center">
                 <button class="btn btn-outline-light"><a href="{{ route('admin.items.create') }}"><i class="fa-solid fa-plus"></i> Add new item</a></button>
-            </div> -->
+            </div> 
         </div>
     @endsection

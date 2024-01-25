@@ -7,6 +7,7 @@ use App\Models\Item;
 use App\Http\Requests\StoreItemRequest;
 use App\Http\Requests\UpdateItemRequest;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ItemController extends Controller
@@ -34,10 +35,10 @@ class ItemController extends Controller
     public function store(StoreItemRequest $request)
     {
         $formData = $request->validated();
-        // if ($request->hasFile('image') && $request->file('image')->isValid()) {
-        //     $path = $request->file('image')->store('images');
-        //     $formData['image'] = $path;
-        // }
+        if($request->hasfile('image')){
+            $image = Storage::put('image', $formData['image']); 
+            $formData['image'] = $image;
+        }
         $slug = Str::slug($formData['name'], '-');
         $formData['slug'] = $slug;
 
@@ -68,6 +69,14 @@ class ItemController extends Controller
     public function update(UpdateItemRequest $request, Item $item)
     {
         $formData = $request->validated();
+        if ($request->hasFile('image')) {
+            if ($item->image) {
+                Storage::delete($item->image);
+            }
+
+            $path = Storage::put('images', $formData['image']);
+            $formData['image'] = $path;
+        }
         $slug = Str::slug($formData['name'], '-');
         $formData['slug'] = $slug;
         $item = Item::create($formData);
@@ -79,6 +88,9 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
+        if($item->image){
+            Storage::delete($item->image);
+        }
         $item->delete();
         return to_route('admin.items.index')->with('message',"$item->name delete");
     }

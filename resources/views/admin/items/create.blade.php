@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Add new item:</h2>
-                <form action="{{ route('admin.items.store') }}" method="POST">
+                <form action="{{ route('admin.items.store') }}" method="POST" enctype="multipart/form-data">
                 
                     @csrf
                     
@@ -69,6 +69,14 @@
                             {{ $message }}
                         </div>
                     @enderror
+
+                    <div class="mb-3">
+                        <label for="image">imgage</label>
+                        <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image">
+                        @error('image')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
 
                     <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
                 </form>
