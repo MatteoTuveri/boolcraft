@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Add new Type:</h2>
-                <form action="{{ route('admin.types.store') }}"enctype="multipart/form-data"  method="POST">
+                <form action="{{ route('admin.types.store') }}" enctype="multipart/form-data"  method="POST">
                     {{-- token --}}
                     @csrf
                     <label for="name">Name:</label>
@@ -21,7 +21,7 @@
                         </div>
                     @enderror
                     <label for="description">Description:</label>
-                    <textarea id="description" type="text" name="description"
+                    <textarea id="description" type="text" name="description" cols="30" rows="10"
                         class="mb-3 form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                         <div class="invalid-feedback">

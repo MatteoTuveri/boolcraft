@@ -25,6 +25,7 @@ class StoreCharacterRequest extends FormRequest
             'name' => ['required', 'max:200', 'unique:characters'],
             'description' => ['nullable'],
             'type_id' => ['required','exists:types,id'],
+            'items'=>'required',
             'attack' => ['required'],
             'defence' => ['required'],
             'speed' => ['required'],
