@@ -78,6 +78,10 @@ class CharacterController extends Controller
     public function update(UpdateCharacterRequest $request, Character $character)
     {
         $formData = $request->validated();
+        if ($request->hasFile('image')) {
+            $path = Storage::put('images', $formData['image']);
+            $formData['image'] = $path;
+        }
         $character->fill($formData);
         $character->update();
         return to_route('admin.characters.show', $character->id);

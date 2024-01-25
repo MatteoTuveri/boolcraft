@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
             <div class="col-8">
                 <h2 class="text-center"> Add new Character:</h2>
-                <form action="{{ route('admin.characters.update', $character->id) }}" method="POST">
+                <form action="{{ route('admin.characters.update', $character->id) }}" method="POST" enctype="multipart/form-data">
 
                     @csrf
                     @method('PUT')
