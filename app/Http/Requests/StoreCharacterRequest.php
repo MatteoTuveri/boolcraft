@@ -22,7 +22,30 @@ class StoreCharacterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'max:200', 'unique:characters'],
+            'description' => ['nullable'],
+            'type_id' => ['required','exists:types,id'],
+            'items'=>'required',
+            'attack' => ['required'],
+            'defence' => ['required'],
+            'speed' => ['required'],
+            'life' => ['required'],
+            'image' => ['nullable', 'image'],
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'name.required' => 'Il nome è obbligatorio',
+            'name.max' => 'Il nome deve avere massimo :max caratteri',
+            'name.unique' => 'Questo nome esiste già',
+            'type_id.required' => 'Il tipo è obbligatorio',
+            'type_id.exists' => 'Il tipo inserito non esiste',
+            'attack.required' => 'Il valore di attacco è obbligatorio',
+            'defence.required' => 'Il valore di difesa è obbligatorio',
+            'speed.required' => 'Il valore di velocità è obbligatorio',
+            'life.required' => 'Il valore di vita è obbligatorio',
+            'image.image' => 'L\'immagine deve essere di tipo image',
         ];
     }
 }

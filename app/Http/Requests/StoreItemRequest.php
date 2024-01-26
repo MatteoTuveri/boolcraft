@@ -27,9 +27,10 @@ class StoreItemRequest extends FormRequest
             'description' => ['nullable'],
             'category' => ['required', 'max:100'],
             'type' => ['required', 'max:100'],
-            'weight' => ['required', 'max:10'],
-            'cost' => ['required', 'max:20'],
-            'image' => ['nullable', 'max:255'],
+            'weight' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:10'],
+            'cost' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:20'],
+            'image'=>['nullable','image', 'mimes:jpeg,png,gif,bmp,svg'],
+
         ];
     }
 
@@ -43,10 +44,14 @@ class StoreItemRequest extends FormRequest
             'type.required' => 'Il campo Tipo è obbligatorio.',
             'type.max' => 'Il campo Tipo non può superare i 100 caratteri.',
             'weight.required' => 'Il campo Peso è obbligatorio.',
-            'weight.max' => 'Il campo Peso non può superare i 10 caratteri.',
+            'weight.numeric' => 'Il campo peso deve essere un valore numerico.',
+            'weight.max' => 'Il campo peso non può superare il valore di 10.',
             'cost.required' => 'Il campo Costo è obbligatorio.',
-            'cost.numeric' => 'Il campo Costo deve essere un numero.',
-            'image.max' => 'Il campo Immagine non può superare i 255 caratteri.',
+            'cost.numeric' => 'Il campo costo deve essere un valore numerico decimale.',
+            'cost.max' => 'Il campo costo non può superare il valore di 20.',
+            'image.image' => "Il campo Immagine deve essere un'immagine.",
+            'image.mimes'=>'image must be a image (.jpeg, png, .gif, .bmp, .svg)',
+
         ];
     }
 }

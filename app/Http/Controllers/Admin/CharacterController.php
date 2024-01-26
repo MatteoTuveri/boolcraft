@@ -29,7 +29,8 @@ class CharacterController extends Controller
     public function create()
     {
         $items = Item::all();
-        return view('admin.characters.create',compact('items'));
+        $types= Type::all();
+        return view('admin.characters.create',compact('items','types'));
     }
 
     /**
@@ -37,17 +38,20 @@ class CharacterController extends Controller
      */
     public function store(StoreCharacterRequest $request)
     {
-        $formData = $request->all();
-        $formData['type_id'] = rand(1, 12);
+       
+        $formData = $request->validated();
+        
+        //$formData['type_id'] = rand(1,12);
         if ($request->hasFile('image')) {
             $path = Storage::put('images', $formData['image']);
             $formData['image'] = $path;
         }
+        
         $new_character = Character::create($formData);
         if ($request->has('items')) {
             $new_character->items()->attach($request->items);
         }
-        return to_route('admin.characters.show', $new_character->id);
+        return redirect()->route('admin.characters.show', $new_character->id);
     }
 
     /**
@@ -63,7 +67,9 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('admin.characters.edit', compact('character'));
+        $types= Type::all();
+        $items= Item::all();
+        return view('admin.characters.edit', compact('character','types','items'));
     }
 
     /**
@@ -72,6 +78,10 @@ class CharacterController extends Controller
     public function update(UpdateCharacterRequest $request, Character $character)
     {
         $formData = $request->validated();
+        if ($request->hasFile('image')) {
+            $path = Storage::put('images', $formData['image']);
+            $formData['image'] = $path;
+        }
         $character->fill($formData);
         $character->update();
         return to_route('admin.characters.show', $character->id);
