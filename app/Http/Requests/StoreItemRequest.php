@@ -30,6 +30,7 @@ class StoreItemRequest extends FormRequest
             'weight' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:10'],
             'cost' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:20'],
             'image'=>['nullable','image', 'mimes:jpeg,png,gif,bmp,svg'],
+
         ];
     }
 
@@ -50,6 +51,7 @@ class StoreItemRequest extends FormRequest
             'cost.max' => 'Il campo costo non può superare il valore di 20.',
             'image.image' => "Il campo Immagine deve essere un'immagine.",
             'image.mimes'=>'image must be a image (.jpeg, png, .gif, .bmp, .svg)',
+
         ];
     }
 }
