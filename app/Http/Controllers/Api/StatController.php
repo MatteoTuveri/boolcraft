@@ -32,7 +32,9 @@ class StatController extends Controller
     public function store(Request $request)
     {
         //
+        
         $score_data= $request->all();
+        //dd($score_data);
         $validator= Validator::make($score_data,[
             'name'=>'required',
             'score'=>'required',
@@ -45,7 +47,7 @@ class StatController extends Controller
             ]);
         };
         $new_stat = new Stat();
-        $new_stat->fill($form_data);
+        $new_stat->fill($score_data);
         $new_stat->save();
 
         return response()->json([
