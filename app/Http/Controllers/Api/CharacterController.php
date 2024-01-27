@@ -11,7 +11,8 @@ class CharacterController extends Controller
     //
     public function index(Request $request){
 
-        $characters = Character::all();
+        //$characters = Character::all();
+        $characters = Character::with(['items','type'])->get();
         return response()->json([
             'success' => true,
             'data' => $characters
