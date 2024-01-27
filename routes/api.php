@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\TypeController;
 use App\Http\Controllers\Api\CharacterController;
 use App\Http\Controllers\Api\ItemController;
+use App\Http\Controllers\Api\StatController;
 
 
 /*
@@ -26,7 +27,7 @@ Route::controller(TypeController::class)->group(function () {
     Route::get('types', 'index');
     Route::get('types/{id}', 'show');
 });
-
+Route::post('/stats',[StatController::class,'store']);
 Route::Get('/characters', [CharacterController::class,'index']);
 Route::Get('/characters/{id}', [CharacterController::class,'show']);
 
