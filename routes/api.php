@@ -28,6 +28,7 @@ Route::controller(TypeController::class)->group(function () {
     Route::get('types/{id}', 'show');
 });
 Route::post('/stats',[StatController::class,'store']);
+Route::get('/stats', [StatController::class ,'index']);
 Route::Get('/characters', [CharacterController::class,'index']);
 Route::Get('/characters/{id}', [CharacterController::class,'show']);
 

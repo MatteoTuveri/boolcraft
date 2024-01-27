@@ -15,7 +15,13 @@ class StatController extends Controller
      */
     public function index()
     {
-        //
+        $stats = Stat::select('*')->orderByDesc('score')->get();
+        return response()->json(
+            [
+                'success' => true,
+                'results' => $stats,
+            ]
+        );
     }
 
     /**
@@ -49,10 +55,10 @@ class StatController extends Controller
         $new_stat = new Stat();
         $new_stat->fill($score_data);
         $new_stat->save();
-
+        $stats = Stat::select('*')->orderByDesc('score')->get();
         return response()->json([
             'success'=>true,
-            'results'=>$new_stat
+            'results'=>$stats
         ]);
     }
 
