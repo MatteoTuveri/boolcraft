@@ -1,6 +1,13 @@
 @extends('layouts.app')
 @section('content')
+    <section class="container">
+        <h1>Characters</h1>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">Types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
+    </section>
     <div class="container">
+
         <table class="table table-hover">
             <thead>
                 <tr class="text-center">

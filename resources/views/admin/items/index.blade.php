@@ -1,5 +1,11 @@
 @extends('layouts.app')
 @section('content')
+    <section class="container">
+        <h1>Items</h1>
+        <a href="{{ route('admin.types.index') }}" class="mx-1">Types</a>
+        <a href="{{ route('admin.items.index') }}" class="mx-1">Items</a>
+        <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
+    </section>
     <div class="container">
         <table class="table table-hover">
             <thead>
@@ -14,7 +20,8 @@
                     <tr class="text-center">
                         <td>
                             @if ($item->image)
-                                <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->name }}" class="img-card">
+                                <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->name }}"
+                                    class="img-card">
                             @else
                                 <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
                                     alt="{{ $item->name }}" class="img-card">
