@@ -7,6 +7,7 @@
         <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
     <div class="container">
+        <div class="text-center"><a href="{{ route('admin.items.create') }}" >add new item</a></div>
         <table class="table table-hover">
             <thead>
                 <tr class="text-center">

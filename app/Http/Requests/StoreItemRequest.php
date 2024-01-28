@@ -29,6 +29,7 @@ class StoreItemRequest extends FormRequest
             'type' => ['required', 'max:100'],
             'weight' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:10'],
             'cost' => ['required', 'numeric', 'regex:/^\d+(\.\d{1,2})?$/', 'max:20'],
+            'damage_dice' => ['required', Rule::in(['0','1d4', '1d6', '1d8', '1d10', '1d12','2d4', '3d4', '4d4', '2d6', '3d6', '2d8'])],
             'image'=>['nullable','image', 'mimes:jpeg,png,gif,bmp,svg'],
 
         ];
@@ -49,6 +50,7 @@ class StoreItemRequest extends FormRequest
             'cost.required' => 'Il campo Costo è obbligatorio.',
             'cost.numeric' => 'Il campo costo deve essere un valore numerico decimale.',
             'cost.max' => 'Il campo costo non può superare il valore di 20.',
+            'damage_dice.required' => 'questo campo è obbligatorio.',
             'image.image' => "Il campo Immagine deve essere un'immagine.",
             'image.mimes'=>'image must be a image (.jpeg, png, .gif, .bmp, .svg)',
 

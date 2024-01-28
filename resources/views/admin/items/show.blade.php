@@ -29,6 +29,7 @@
                     <p class="card-text">Type: {{ $item->type }}</p>
                     <p class="card-text">Weight: {{ $item->weight }}</p>
                     <p class="card-text">Cost: {{ $item->cost }}</p>
+                    <p class="card-text">damage dice: {{ $item->damage_dice }}</p>
                     <div class="d-flex align-items-center">
                         <a class="btn btn-warning" href=" {{ route('admin.items.edit', $item->id) }}"><i class="fa-solid fa-pencil"></i></a>
                         <form action="{{ route('admin.items.destroy', $item->id) }}" method="post" class="mx-2">

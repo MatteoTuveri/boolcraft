@@ -69,10 +69,31 @@
                             {{ $message }}
                         </div>
                     @enderror
-
+                    
+                    <div class="mb-3">
+                        <label for="damage_dice">damage dice</label>
+                        <select name="damage_dice" id="damage_dice">
+                            <option value="">scegli il dado del danno</option>
+                            <option value="0" {{ old('damage_dice') == '0' ? 'selected' : '' }}>0</option>
+                            <option value="1d4" {{ old('damage_dice') == '1d4' ? 'selected' : '' }}>1d4</option>
+                            <option value="2d4" {{ old('damage_dice') == '2d4' ? 'selected' : '' }}>2d4</option>
+                            <option value="3d4" {{ old('damage_dice') == '3d4' ? 'selected' : '' }}>3d4</option>
+                            <option value="4d4" {{ old('damage_dice') == '4d4' ? 'selected' : '' }}>4d4</option>
+                            <option value="1d6" {{ old('damage_dice') == '1d6' ? 'selected' : '' }}>1d6</option>
+                            <option value="2d6" {{ old('damage_dice') == '2d6' ? 'selected' : '' }}>2d6</option>
+                            <option value="3d6" {{ old('damage_dice') == '3d6' ? 'selected' : '' }}>3d6</option>
+                            <option value="1d8" {{ old('damage_dice') == '1d8' ? 'selected' : '' }}>1d8</option>
+                            <option value="2d8" {{ old('damage_dice') == '2d8' ? 'selected' : '' }}>2d8</option>
+                            <option value="1d10" {{ old('damage_dice') == '1d10' ? 'selected' : '' }}>1d10</option>
+                            <option value="1d12" {{ old('damage_dice') == '1d12' ? 'selected' : '' }}>1d12</option>
+                        </select>
+                        @error('damage_dice')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
 
                     <div class="mb-3">
-                        <label for="image">imgage</label>
+                        <label for="image">image</label>
                         <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image">
                         @error('image')
                             <div class="invalid-feedback">{{ $message }}</div>
