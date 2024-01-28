@@ -16,9 +16,14 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
 
-                        <div class="card-body">
-                            <img style="width:100%" src="{{asset('storage/'.$item->image)}}" alt="">
-                        </div>
+                        
+                            @if ($item->image)
+                            <img style="width:100%" src="{{asset('storage/'.$item->image)}}" alt="{{$item->name}}">
+                            @else
+                            <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
+                            alt="{{ $item->name }}" class="img-card">
+                            @endif
+                        
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
