@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Item extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','description','slug','category','type', 'weight','cost','image'];
+    protected $fillable = ['name','description','slug','category','type', 'weight','cost','damage_dice','image'];
 
     public function characters(){
         return $this->belongsToMany(Character::class);
