@@ -26,6 +26,7 @@ class ItemSeeder extends Seeder
             $new_item->type = $item["type"];
             $new_item->weight = $item["weight"];
             $new_item->cost = $item["cost"];
+            $new_item->damage_dice = $item["damage_dice"];
             $new_item->image = ItemSeeder::storeimage($item['image'], $item['name']);
             $new_item->save();
 
