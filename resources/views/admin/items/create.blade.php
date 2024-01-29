@@ -35,8 +35,12 @@
                     @enderror
 
                     <label for="category">category:</label>
-                    <input id="category" value="{{ old('category') }}" type="text" name="category"
-                        class="mb-3 form-control @error('category') is-invalid @enderror" >
+                    {{-- <input id="category" value="{{ old('category') }}" type="text" name="category"
+                        class="mb-3 form-control @error('category') is-invalid @enderror" > --}}
+                        <select name="category" id="category" class="mb-3 form-control @error('category') is-invalid @enderror">
+                            <option value="Simple Melee Weapons">Simple Melee Weapons</option>
+                            <option value="Martial Melee Weapons">Martial Melee Weapons</option>
+                        </select>
                     @error('category')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -44,8 +48,9 @@
                     @enderror
 
                     <label for="type">type:</label>
-                    <input id="type" value="{{ old('type') }}" type="text" name="type"
-                        class="mb-3 form-control @error('type') is-invalid @enderror">
+                    <select name="type" id="type" class="mb-3 form-control @error('type') is-invalid @enderror">
+                        <option value="Weapons">Weapons</option>
+                    </select>
                     @error('type')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -99,7 +104,7 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+                    <button type="submit" class="btn btn-success mt-3"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
         </div>
