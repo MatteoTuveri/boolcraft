@@ -7,7 +7,6 @@
         <a href="{{ route('admin.characters.index') }}" class="mx-1">Characters</a>
     </section>
     <div class="container">
-        <div class="text-center"><a href="{{ route('admin.items.create') }}" >add new item</a></div>
         <table class="table table-hover">
             <thead>
                 <tr class="text-center">
@@ -21,8 +20,10 @@
                     <tr class="text-center">
                         <td>
                             @if ($item->image)
-                                <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->name }}"
-                                    class="img-card">
+                                <div class="img-wrapper">
+                                    <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->name }}"
+                                        class="img-card">
+                                </div>
                             @else
                                 <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
                                     alt="{{ $item->name }}" class="img-card">

@@ -20,11 +20,15 @@
                     <tr class="text-center">
                         <td>
                             @if ($type->image)
-                                <img src="{{ asset('storage/' . $type->image) }}" alt="{{ $type->name }}"
-                                    class="img-card">
+                                <div class="img-wrapper">
+                                    <img src="{{ asset('storage/' . $type->image) }}" alt="{{ $type->name }}"
+                                        class="img-card">
+                                </div>
                             @else
-                                <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
-                                    alt="{{ $type->name }}" class="img-card">
+                                <div class="img-wrapper">
+                                    <img src="https://www.worldofleveldesign.com/categories/ue4/images/012-ue4-crash-course-86.jpg"
+                                        alt="{{ $type->name }}" class="img-card">
+                                </div>
                             @endif
                         </td>
                         <th>{{ $type->name }}</th>
