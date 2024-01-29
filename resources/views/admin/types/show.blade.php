@@ -25,7 +25,8 @@
 
                 <pre class="mb-4">{{ $type->description }}</pre>
                 <div class="d-flex gap-2">
-                    <a class="btn btn-primary" href=" {{ route('admin.types.edit', $type->id) }}">Type Modify</a>
+                    <a class="btn btn-warning" href=" {{ route('admin.types.edit', $type->id) }}"><i
+                        class="fa-solid fa-pencil"></i></a>
                     <form action="{{ route('admin.types.destroy', $type->id) }}" method="post">
                         @csrf
                         @method('DELETE')

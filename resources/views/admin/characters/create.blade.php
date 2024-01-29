@@ -103,7 +103,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+                        <button type="submit" class="btn btn-success mt-3"><i class="fa-solid fa-plus"></i></button>
                 </form>
             </div>
         </div>
