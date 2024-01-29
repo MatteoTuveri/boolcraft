@@ -23,7 +23,7 @@
         <div class="mx-1">
             <div class="card d-flex-column align-items-center" style="width: 18rem;">
                 @if ($item->image)
-                    <img src="{{ $item->name }}" class="card-img-top" alt="{{ $item->name }}">
+                    <img src="{{ $baseImgUrl . $item->image }}" class="card-img-top" alt="{{ $item->name }}">
                 @endif
 
                 <div class="card-body d-flex-column">
@@ -35,7 +35,7 @@
         <div class="mx-1">
             <div class="card d-flex-column align-items-center" style="width: 18rem;">
                 @if ($character->image)
-                    <img src="{{ $character->image }}" class="card-img-top" alt="{{ $character->name }}">
+                    <img src="{{ asset('storage/' . $character->image) }}" class="card-img-top" alt="{{ $character->name }}">
                 @endif
                 <div class="card-body d-flex-column">
                     <h5 class="card-title text-center">{{ $character->name }}</h5>
